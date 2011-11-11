@@ -1,0 +1,36 @@
+recipe-tablet:
+  type: node
+
+  screens:
+    - name: index
+      backgroundImage: true
+      regions:
+
+      - type: row
+        size: fixed
+        className: hideTitle
+        components:
+        - PageNav
+
+      - type: row
+        scrollable: true
+        regions:
+          
+          - type: row
+            size: fixed
+            components:
+              - custom.ImageHeader
+      
+          - type: row
+            className: bottomContent
+            contains: columns
+            regions:
+          
+              - type: column
+                components:
+                  - custom.IngredientsList
+          
+              - type: column
+                className: main-recipe
+                components:
+                  - BodyText

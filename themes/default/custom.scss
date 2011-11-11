@@ -1,1 +1,58 @@
 /* override theme defaults in this file */
+
+$headers: Baskerville, serif;
+
+
+.hideTitle {
+  .component.page-nav {
+    h1 {
+      visibility: hidden;
+    }
+  }
+}
+
+.main-recipe {
+  padding: 10px;
+  
+  h1, h2, h3, h4 {
+    font:{
+      family: $headers;
+    };
+  }
+}
+
+.tablet {
+  
+  .component.page-nav {
+
+    .top {
+      background: #333;
+    }
+    
+  }
+  
+  .component.image-header {
+    height: 400px;
+    background-position: center;
+    
+    h1 {
+      background-color: rgba(0,0,0,.8);
+      position: absolute;
+      bottom: 50px;
+      left: 0;
+      max-width: 75%;
+      padding: 10px 20px;
+      color: white;
+      font:{
+        family: $headers;
+        size: 36px;
+        weight: normal;
+      }
+    }
+  }
+  
+}
+
+.phone {
+  
+}
