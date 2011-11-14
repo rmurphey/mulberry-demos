@@ -9,7 +9,7 @@ mulberry.component('IngredientsList', {
     this.ingredients = this.data.json.ingredients;
   },
 
-  init : function() {
+  setupChildComponents : function() {
     // replace with populate once it's available
     for( var i = 0, l = this.ingredients.length, el; i < l; ++i ){
       this.domNode.innerHTML += "<li>"+this.ingredients[i]+"</li>";

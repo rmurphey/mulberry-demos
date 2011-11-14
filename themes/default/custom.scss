@@ -19,12 +19,62 @@ $headers: Baskerville, serif;
       family: $headers;
       weight: normal;
     };
+    margin-bottom: 6px;
+  }
+  
+  .component li {
+    //margin-left: 20px;
+    //text-indent: -20px;
   }
 }
+
 .component.page-nav {
 
   .top {
     background: #333;
+  }
+  
+}
+
+.component.image-header {
+  background: {
+    position: center;
+    size: cover;
+  };
+  
+  h1 {
+    background-color: rgba(0,0,0,.8);
+    position: absolute;
+    left: 0;
+    color: white;
+  }
+}
+
+.phone {
+
+  .component.image-header {
+    height: 200px;
+
+    @media screen and (max-height: 320px) {
+      display: none;
+    } 
+    
+    h1 {
+      bottom: 25px;
+      width: 100%;
+      padding: 10px;
+      font: {
+        family: $headers;
+        size: 24px;
+      };
+    }
+  }
+  
+  .main-recipe {
+    .component.ingredient-list,
+    .component.body-text {
+      margin: 0 5px;
+    }
   }
   
 }
@@ -34,19 +84,11 @@ $headers: Baskerville, serif;
   
   .component.image-header {
     height: 400px;
-    background:{
-      position: center;
-      size: cover;
-    };
     
     h1 {
-      background-color: rgba(0,0,0,.8);
-      position: absolute;
       bottom: 50px;
-      left: 0;
       max-width: 75%;
       padding: 10px 20px;
-      color: white;
       font:{
         family: $headers;
         size: 36px;

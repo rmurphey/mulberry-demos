@@ -11,12 +11,9 @@ recipe-phone:
         - PageNav
 
       - type: row
-        components:
-        - ImageGallery
-
-      - type: row
         scrollable: true
         className: main-recipe
         components:
+        - custom.ImageHeader
         - custom.IngredientsList
         - BodyText
