@@ -20,7 +20,12 @@ recipe-tablet:
             size: fixed
             components:
               - custom.ImageHeader
-      
+          
+          - type: row
+            className: main-body-text
+            components:
+              - BodyText
+          
           - type: row
             className: main-recipe
             contains: columns
@@ -32,4 +37,4 @@ recipe-tablet:
           
               - type: column
                 components:
-                  - BodyText
+                  - custom.PreparationList

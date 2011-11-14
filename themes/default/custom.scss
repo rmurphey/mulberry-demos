@@ -4,6 +4,10 @@ $headers: Baskerville, serif;
 $headerbg: rgba(0,0,0,.8);
 
 
+.body-text {
+  font-family: Georgia, serif;
+}
+
 .hideTitle {
   .component.page-nav {
     h1 {
@@ -24,8 +28,9 @@ $headerbg: rgba(0,0,0,.8);
   }
   
   .component li {
-    //margin-left: 20px;
-    //text-indent: -20px;
+    margin-left: 0;
+    padding-left: 20px;
+    text-indent: -20px;
   }
 }
 
@@ -51,6 +56,11 @@ $headerbg: rgba(0,0,0,.8);
   }
 }
 
+ol.component.preparation-list {
+  list-style: decimal;
+}
+
+
 .phone {
 
   .component.image-header {
@@ -73,7 +83,7 @@ $headerbg: rgba(0,0,0,.8);
   
   .main-recipe {
     .component.ingredient-list,
-    .component.body-text {
+    .component.preparation-list {
       margin: 0 5px;
     }
   }
@@ -85,6 +95,7 @@ $headerbg: rgba(0,0,0,.8);
     &.size-large li {
       height: 278px;
     }
+    
     li {
       
       h3 {
@@ -103,12 +114,18 @@ $headerbg: rgba(0,0,0,.8);
     }
   }
   
+  .main-body-text .component.body-text {
+    padding: 10px;
+    border-bottom: 1px solid #999;
+  }
+  
   .component.image-header {
     height: 400px;
     
     h1 {
       bottom: 50px;
       max-width: 75%;
+      
       padding: 10px 20px;
       font:{
         family: $headers;
