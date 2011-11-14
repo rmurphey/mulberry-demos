@@ -1,6 +1,7 @@
 /* override theme defaults in this file */
 
 $headers: Baskerville, serif;
+$headerbg: rgba(0,0,0,.8);
 
 
 .hideTitle {
@@ -43,7 +44,7 @@ $headers: Baskerville, serif;
   };
   
   h1 {
-    background-color: rgba(0,0,0,.8);
+    background-color: $headerbg;
     position: absolute;
     left: 0;
     color: white;
@@ -80,7 +81,27 @@ $headers: Baskerville, serif;
 }
 
 .tablet {
-  
+  .component.child-node-grid {
+    &.size-large li {
+      height: 278px;
+    }
+    li {
+      
+      h3 {
+        position: absolute;
+        bottom: 25px;
+        color: white;
+        background-color: $headerbg;
+        padding: 5px 10px;
+        max-width: 75%;
+        font: {
+          family: $headers;
+          weight: normal;
+          size: 18px;
+        };
+      }
+    }
+  }
   
   .component.image-header {
     height: 400px;
@@ -96,9 +117,5 @@ $headers: Baskerville, serif;
       }
     }
   }
-  
-}
-
-.phone {
   
 }

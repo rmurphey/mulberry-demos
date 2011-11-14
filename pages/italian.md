@@ -2,19 +2,8 @@
 title: Italian
 template:
   phone: default
-  tablet: default
+  tablet: grid-view
 
-# these should optionally point at an image in the images dir
-header_image:
-background_image:
-
-# each of these properties can include an array of filenames
-images:
-videos:
-audios:
-feeds:
-locations:
-data:
 ---
 
 
