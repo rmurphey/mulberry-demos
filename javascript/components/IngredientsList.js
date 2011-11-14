@@ -10,8 +10,9 @@ mulberry.component('IngredientsList', {
   },
 
   init : function() {
-    for( var i = 0, l = this.ingredients.length; i < l; ++i ){
-      mulberry.populate(this.domNode, this.ingredientTemplate, { ingredient: this.ingredients[i] });
+    // replace with populate once it's available
+    for( var i = 0, l = this.ingredients.length, el; i < l; ++i ){
+      this.domNode.innerHTML += "<li>"+this.ingredients[i]+"</li>";
     }
   }
 });

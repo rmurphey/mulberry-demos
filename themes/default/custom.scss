@@ -17,23 +17,27 @@ $headers: Baskerville, serif;
   h1, h2, h3, h4 {
     font:{
       family: $headers;
+      weight: normal;
     };
   }
+}
+.component.page-nav {
+
+  .top {
+    background: #333;
+  }
+  
 }
 
 .tablet {
   
-  .component.page-nav {
-
-    .top {
-      background: #333;
-    }
-    
-  }
   
   .component.image-header {
     height: 400px;
-    background-position: center;
+    background:{
+      position: center;
+      size: cover;
+    };
     
     h1 {
       background-color: rgba(0,0,0,.8);

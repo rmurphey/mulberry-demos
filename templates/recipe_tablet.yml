@@ -22,7 +22,7 @@ recipe-tablet:
               - custom.ImageHeader
       
           - type: row
-            className: bottomContent
+            className: main-recipe
             contains: columns
             regions:
           
@@ -31,6 +31,5 @@ recipe-tablet:
                   - custom.IngredientsList
           
               - type: column
-                className: main-recipe
                 components:
                   - BodyText

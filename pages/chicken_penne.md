@@ -12,21 +12,6 @@ data:
   
 ---
 
-## Ingredients
-
-- 2 1/2 cups uncooked penne pasta
-- 4 tablespoons butter
-- 1 garlic clove, minced
-- 1/3 cup onion, finely chopped
-- 1/4 teaspoon salt
-- 4 tablespoons flour
-- 2 cups chicken broth
-- 1/2 cup sour cream
-- Kosher salt and freshly ground black pepper
-- 2 cooked chicken breasts, cut into bite-size pieces
-- Red pepper flakes, optional
-- Snow peas, handful, optional
-
 ## Preparation
 
 1. Bring a large pot of salted water (sea water salty!) to a boil.
