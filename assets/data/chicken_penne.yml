@@ -1,5 +1,4 @@
-# any valid YAML
-type: ingredients
+type: recipe
 ingredients:
   - 2 1/2 cups uncooked penne pasta
   - 4 tablespoons butter
@@ -20,4 +19,8 @@ preparation:
   - 'Stir in broth, stirring frequently until sauce comes to simmer. Remove from heat.'
   - 'Using an immersion hand blender blend until sauce is smooth. Stir in sour cream.'
   - 'Drain pasta, transfer to a large serving bowl, and top with chicken. Pour sauce over pasta, toss in a handful of snow peas and red pepper flakes, and toss well.'
-  
+credits:
+  author: Sheri Wetherell
+  link: 'http://www.foodista.com/recipe/KLW6GPQG/creamy-garlic-chicken-and-penne'
+  photocredit: jerine
+  photolink: 'http://www.flickr.com/photos/jerine/2574509907/'
