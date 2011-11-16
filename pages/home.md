@@ -5,4 +5,4 @@ template:
   tablet: home-tablet
 ---
 
-This is some sample content. You should replace it with your own.
+Food is delicious.

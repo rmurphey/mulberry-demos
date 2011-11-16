@@ -4,4 +4,17 @@
     - sausage_meatballs
     - spinach_lasagne
     - spinach_malfatti
+    - parmesan_crisps
+  - french:
+    - coq_au_vin
+    - papaya_soup
+    - cassoulet
+  - indian:
+    - modak
+    - cumin_cauliflower
+    - saffron_pancake
+  - chinese:
+    - jicama_dumplings
+    - pork_fried_rice
+    - thousand_year_eggs
 - about

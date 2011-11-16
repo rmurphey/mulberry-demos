@@ -35,11 +35,9 @@ $headerbg: rgba(0,0,0,.8);
 }
 
 .component.page-nav {
-
   .top {
     background: #333;
   }
-  
 }
 
 .component.image-header {
@@ -62,7 +60,6 @@ ol.component.preparation-list {
 
 
 .phone {
-
   .component.image-header {
     height: 200px;
 
@@ -88,12 +85,21 @@ ol.component.preparation-list {
     }
   }
   
+  .component.body-text {
+    padding: 0 10px;
+    margin-top: 1em;
+    
+    h2 {
+      font-size: 20px;
+    }
+  }
 }
 
 .tablet {
   .component.child-node-grid {
-    &.size-large li {
-      height: 278px;
+    // need the size-large/size-medium to be sure we get sufficient priority in the cascade
+    &.size-large li, &.size-medium li {
+      height: auto;
     }
     
     li {
@@ -117,6 +123,14 @@ ol.component.preparation-list {
   .main-body-text .component.body-text {
     padding: 10px;
     border-bottom: 1px solid #999;
+  }
+  
+  .ingredients-column {
+    width: 472px; /* the width gets halved because of some weird issue with flexbox */
+  }
+  
+  .ingredients-list {
+    margin-right: 10px;
   }
   
   .component.image-header {

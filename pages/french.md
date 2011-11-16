@@ -1,8 +1,8 @@
 ---
-title: Italian
+title: French
 template:
   phone: default
   tablet: grid-view
-featured_image: spinach_malfatti.jpg
+featured_image: coq_au_vin.jpg
 ---
 

@@ -32,6 +32,7 @@ recipe-tablet:
             regions:
           
               - type: column
+                className: ingredients-column
                 components:
                   - custom.IngredientsList
           

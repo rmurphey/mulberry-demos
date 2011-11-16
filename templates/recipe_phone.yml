@@ -15,5 +15,6 @@ recipe-phone:
         className: main-recipe
         components:
         - custom.ImageHeader
-        - custom.IngredientsList
         - BodyText
+        - custom.IngredientsList
+        - custom.PreparationList

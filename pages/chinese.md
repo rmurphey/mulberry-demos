@@ -1,8 +1,9 @@
 ---
-title: Italian
+title: Chinese
 template:
   phone: default
   tablet: grid-view
-featured_image: spinach_malfatti.jpg
+
+featured_image: pork_fried_rice.jpg
 ---
 
