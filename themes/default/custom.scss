@@ -34,10 +34,8 @@ $headerbg: rgba(0,0,0,.8);
   }
 }
 
-.component.page-nav {
-  .top {
-    background: #333;
-  }
+.component.page-nav .top, .component.app-nav {
+  background: #333;
 }
 
 .component.page-header-image {
@@ -56,6 +54,23 @@ $headerbg: rgba(0,0,0,.8);
     left: 0;
     color: white;
   }
+}
+
+.component.home-header {
+  h1 {
+    position: absolute;
+    z-index: 40;
+    background-color: $headerbg;
+    color: white;
+    padding: 10px;
+    right: 0;
+    bottom: 25%;
+    font: {
+      family: $headers;
+      weight: normal;
+    };
+  }
+  
 }
 
 ol.component.preparation-list {
@@ -100,6 +115,12 @@ ol.component.preparation-list {
 }
 
 .tablet {
+  .component.home-header {
+    h1 {
+      font-size: 30px;
+    }
+  }
+  
   .component.child-node-grid {
     // need the size-large/size-medium to be sure we get sufficient priority in the cascade
     &.size-large li, &.size-medium li {
@@ -124,9 +145,15 @@ ol.component.preparation-list {
     }
   }
   
-  .home-nav-columns {
-    margin: 10px;
+  .component.app-nav {
+    width: auto;
+    margin: 0;
+    -webkit-border-radius: 0;
+    li, li a {
+      height: 25px;
+    }
   }
+  
   
   .main-body-text .component.body-text {
     padding: 10px;

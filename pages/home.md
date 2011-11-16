@@ -1,9 +1,7 @@
 ---
-title: Home
+title: Foods of the World
 template:
   phone: home_grid_phone
   tablet: home_grid_tablet
-header_image: bread_pile_header.jpg
+header_image: bread_pile.jpg
 ---
-
-Food is delicious.
