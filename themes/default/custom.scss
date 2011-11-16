@@ -40,6 +40,10 @@ $headerbg: rgba(0,0,0,.8);
   }
 }
 
+.component.page-header-image {
+  -webkit-box-shadow: none;
+}
+
 .component.image-header {
   background: {
     position: center;
@@ -118,6 +122,10 @@ ol.component.preparation-list {
         };
       }
     }
+  }
+  
+  .home-nav-columns {
+    margin: 10px;
   }
   
   .main-body-text .component.body-text {

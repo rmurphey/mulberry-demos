@@ -1,0 +1,5 @@
+.component.home-header
+  :if headerTitle
+    %h1 =headerTitle
+  :if viewImage
+    %img{ src: viewImage.url, width: viewImage.width, height: viewImage.height, dojoAttachPoint : 'imageNode' }

@@ -1,0 +1,31 @@
+home_grid_tablet:
+  type: node
+  screens:
+  - name: index
+    regions:
+    - type: row
+      regions:
+
+      - type: row
+        className: top
+        size: fixed
+        components:
+        - HomeHeader    # since this is not generated with mulberry.component
+                        # it loads in like a "standard" component
+
+      - type: row
+        className: home-nav-columns
+        regions:
+        - type: column
+          scrollable: true
+          components:
+          - BodyText
+        - type: column
+          scrollable: true
+          components:
+          - ChildNodes
+
+    - type: row
+      size: fixed
+      components:
+      - AppNav
