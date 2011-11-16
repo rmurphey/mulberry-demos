@@ -1,1 +1,1 @@
-A polished demo app for mulberry.
+Demo apps for mulberry.
