@@ -21,9 +21,10 @@ body {
 
 $headers: Baskerville, serif;
 $headerbg: rgba(0,0,0,.8);
+$navbg: #333;
 
-@import 'custom';
 @import '../../javascript/components/HomeHeader/home-header';
 @import '../../javascript/components/ImageHeader/image-header';
 @import '../../javascript/components/IngredientsList/ingredients-list';
 @import '../../javascript/components/PreparationList/preparation-list';
+@import 'custom';

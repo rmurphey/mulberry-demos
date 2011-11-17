@@ -1,21 +1,7 @@
 /* override theme defaults in this file */
 
-$headers: Baskerville, serif;
-$headerbg: rgba(0,0,0,.8);
 
-
-.body-text {
-  font-family: Georgia, serif;
-}
-
-.hideTitle {
-  .component.page-nav {
-    h1 {
-      visibility: hidden;
-    }
-  }
-}
-
+// base styles
 .main-recipe {
   padding: 10px;
   
@@ -34,28 +20,57 @@ $headerbg: rgba(0,0,0,.8);
   }
 }
 
-.component.page-nav .top, .component.app-nav {
-  background: #333;
+
+// component styles
+.component.page-nav {
+  .hideTitle & {
+    h1 {
+      visibility: hidden;
+    }
+  }
+  
+  .top {
+    background: $navbg;
+  }
+}
+
+.component.app-nav {
+  background: $navbg;
+  
+  .tablet & {
+    width: auto;
+    margin: 0;
+    -webkit-border-radius: 0;
+    li, li a {
+      height: 25px;
+    }
+  }
+}
+
+.component.body-text {
+  font-family: Georgia, serif;
+  
+  .phone & {
+    padding: 0 10px;
+    margin-top: 1em;
+    
+    h2 {
+      font-size: 20px;
+    }    
+  }
+  
+  .tablet .main-body-text & {
+    padding: 10px;
+    border-bottom: 1px solid #999;
+  }
 }
 
 .component.page-header-image {
   -webkit-box-shadow: none;
 }
 
-
-.phone {
-  .component.body-text {
-    padding: 0 10px;
-    margin-top: 1em;
-    
-    h2 {
-      font-size: 20px;
-    }
-  }
-}
-
-.tablet {
-  .component.child-node-grid {
+.component.child-node-grid {
+  .tablet & {
     // need the size-large/size-medium to be sure we get sufficient priority in the cascade
     &.size-large li, &.size-medium li {
       height: auto;
@@ -78,22 +93,10 @@ $headerbg: rgba(0,0,0,.8);
       }
     }
   }
-  
-  .component.app-nav {
-    width: auto;
-    margin: 0;
-    -webkit-border-radius: 0;
-    li, li a {
-      height: 25px;
-    }
-  }
-  
-  
-  .main-body-text .component.body-text {
-    padding: 10px;
-    border-bottom: 1px solid #999;
-  }
-  
+}
+
+// other tablet styles
+.tablet {
   .ingredients-column {
     width: 472px; /* the width gets halved because of some weird issue with flexbox */
   }
