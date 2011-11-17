@@ -1,0 +1,21 @@
+.component.home-header {
+  h1 {
+    position: absolute;
+    z-index: 40;
+    background-color: $headerbg;
+    color: white;
+    padding: 10px;
+    right: 0;
+    bottom: 25%;
+    font: {
+      family: $headers;
+      weight: normal;
+    };
+  }
+  
+  .tablet & {
+    h1 {
+      font-size: 30px;
+    }
+  }
+}

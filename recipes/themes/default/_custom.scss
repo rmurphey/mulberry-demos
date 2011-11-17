@@ -1,0 +1,100 @@
+/* override theme defaults in this file */
+
+$headers: Baskerville, serif;
+$headerbg: rgba(0,0,0,.8);
+
+
+.body-text {
+  font-family: Georgia, serif;
+}
+
+.hideTitle {
+  .component.page-nav {
+    h1 {
+      visibility: hidden;
+    }
+  }
+}
+
+.main-recipe {
+  padding: 10px;
+  
+  h1, h2, h3, h4 {
+    font:{
+      family: $headers;
+      weight: normal;
+    };
+    margin-bottom: 6px;
+  }
+  
+  .component li {
+    margin-left: 0;
+    padding-left: 20px;
+    text-indent: -20px;
+  }
+}
+
+.component.page-nav .top, .component.app-nav {
+  background: #333;
+}
+
+.component.page-header-image {
+  -webkit-box-shadow: none;
+}
+
+
+.phone {
+  .component.body-text {
+    padding: 0 10px;
+    margin-top: 1em;
+    
+    h2 {
+      font-size: 20px;
+    }
+  }
+}
+
+.tablet {
+  .component.child-node-grid {
+    // need the size-large/size-medium to be sure we get sufficient priority in the cascade
+    &.size-large li, &.size-medium li {
+      height: auto;
+    }
+    
+    li {
+      
+      h3 {
+        position: absolute;
+        bottom: 25px;
+        color: white;
+        background-color: $headerbg;
+        padding: 5px 10px;
+        max-width: 75%;
+        font: {
+          family: $headers;
+          weight: normal;
+          size: 18px;
+        };
+      }
+    }
+  }
+  
+  .component.app-nav {
+    width: auto;
+    margin: 0;
+    -webkit-border-radius: 0;
+    li, li a {
+      height: 25px;
+    }
+  }
+  
+  
+  .main-body-text .component.body-text {
+    padding: 10px;
+    border-bottom: 1px solid #999;
+  }
+  
+  .ingredients-column {
+    width: 472px; /* the width gets halved because of some weird issue with flexbox */
+  }
+}

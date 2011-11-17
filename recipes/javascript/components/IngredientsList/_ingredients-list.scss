@@ -1,0 +1,11 @@
+.component.ingredients-list {
+  .phone & {
+    .main-recipe & {
+      margin: 0 5px;
+    }
+  }
+  
+  .tablet & {
+    margin-right: 10px;
+  }
+}

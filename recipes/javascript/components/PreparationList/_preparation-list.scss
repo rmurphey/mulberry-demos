@@ -1,0 +1,9 @@
+ol.components.preparation-list {
+  list-style: decimal;
+  
+  .phone & {
+    .main-recipe & {
+      margin: 0 5px;
+    }
+  }
+}
