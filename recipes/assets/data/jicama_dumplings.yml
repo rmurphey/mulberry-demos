@@ -1,21 +1,21 @@
 # any valid YAML
-type: recipe
+type: 'recipe'
 ingredients:
   - 'for filling:'
-  - about 400 g Jicama / Yam Bean
-  - about 100 g carrots
-  - 2 tbs dried shrimps
-  - 5 large garlic cloves, chopped
-  - 1 tbs oyster sauce
-  - 2 tbs light soy sauce
-  - 1 tbs sugar
-  - 1/2 cup water
-  - oil for frying
+  - 'about 400 g Jicama / Yam Bean'
+  - 'about 100 g carrots'
+  - '2 tbs dried shrimps'
+  - '5 large garlic cloves, chopped'
+  - '1 tbs oyster sauce'
+  - '2 tbs light soy sauce'
+  - '1 tbs sugar'
+  - '1/2 cup water'
+  - 'oil for frying'
   - 'for skin:'
-  - 165 g wheat starch
-  - 85 g tapioca flour
-  - 420 g hot boiling water
-  - 3 - 5 tbs oil (I used 3 tbs)
+  - '165 g wheat starch'
+  - '85 g tapioca flour'
+  - '420 g hot boiling water'
+  - '3 - 5 tbs oil (I used 3 tbs)'
 preparation:
   - 'For the filling: Rinse and soak dried shrimps until soft. (About 20 mins)'
   - 'Peel and shred or finely julienne yam bean and carrots into about 3" long strips.'
@@ -43,10 +43,10 @@ preparation:
   - 'Serve warm with chili sauce.'
   - 'Dumplings can be kept in the freezer uncooked.'
   - 'Place frozen dumplings directly into steamer and steam for about 15 - 18 mins or until translucent.'
-  - '*Remember to oil the tray your dumplings sit on or use parchment paper to line.'
+  - 'Remember to oil the tray your dumplings sit on or use parchment paper to line.'
 credits:
-  author: ping
+  author: 'ping'
   link: 'http://www.foodista.com/recipe/LQKBBZMC/chinese-jicama-dumplings'
-  photocredit: ping
+  photocredit: 'ping'
   photolink: 'http://cf2.foodista.com/sites/default/files/jicama_dumplings.jpg'
   

@@ -1,16 +1,16 @@
 # any valid YAML
-type: recipe
+type: 'recipe'
 ingredients:
-  - Zest of 1 lemon
-  - Juice of 2 limes
-  - ½ Pineapple
-  - 1 medium sized papaya
-  - ¾ cup sweet wine such as Sauternes
-  - 1/3 cup sugar
-  - 1 pinch of salt
-  - 36 very white jasmine flowers
-  - 6 sprigs of fresh mint
-  - White pepper, finely ground
+  - 'Zest of 1 lemon'
+  - 'Juice of 2 limes'
+  - '½ Pineapple'
+  - '1 medium sized papaya'
+  - '¾ cup sweet wine such as Sauternes'
+  - '1/3 cup sugar'
+  - '1 pinch of salt'
+  - '36 very white jasmine flowers'
+  - '6 sprigs of fresh mint'
+  - 'White pepper, finely ground'
 preparation:
   - 'Grate the lemon for the zest'
   - 'Peel, deseed and cube papayas'
@@ -24,7 +24,7 @@ preparation:
   - 'Garnish each soup bowl with 2 jasmines and a sprig of mint'
   - 'Enjoy'
 credits:
-  author: Now Serving
-  link: http://www.foodista.com/recipe/6TH8Y5GR/pineapple-papaya-soup-with-jasmine
-  photocredit: Now Serving
-  photolink: http://cf2.foodista.com/sites/default/files/IMG_4061_0.JPG
+  author: 'Now Serving'
+  link: 'http://www.foodista.com/recipe/6TH8Y5GR/pineapple-papaya-soup-with-jasmine'
+  photocredit: 'Now Serving'
+  photolink: 'http://cf2.foodista.com/sites/default/files/IMG_4061_0.JPG'

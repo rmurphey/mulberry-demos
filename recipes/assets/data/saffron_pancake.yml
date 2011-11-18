@@ -1,22 +1,22 @@
 # any valid YAML
-type: recipe
+type: 'recipe'
 ingredients:
   - 'for Kesari Kheer:'
-  - 2 litre whole milk
-  - 50 grams rice
-  - 2 tbsp sugar (you can adjust it to suit your taste)
-  - ½ tsp saffron
-  - ½ tbsp almonds slivered (soaked over-night in water)
-  - ½ tbsp pistachio (chopped)
-  - ½ tbsp raisin
-  - ½ tbsp cashew nuts (roasted) chopped
-  - (using dry fruits is optional)
+  - '2 litre whole milk'
+  - '50 grams rice'
+  - '2 tbsp sugar (you can adjust it to suit your taste)'
+  - '½ tsp saffron'
+  - '½ tbsp almonds slivered (soaked over-night in water)'
+  - '½ tbsp pistachio (chopped)'
+  - '½ tbsp raisin'
+  - '½ tbsp cashew nuts (roasted) chopped'
+  - '(using dry fruits is optional)'
   - 'for Pooda:'
-  - 1 cup whole wheat flour
-  - ¾ cup sugar
-  - 1 tsp anise seeds/ fennel seeds
-  - Water (for the batter)
-  - Oil for shallow frying
+  - '1 cup whole wheat flour'
+  - '¾ cup sugar'
+  - '1 tsp anise seeds/ fennel seeds'
+  - 'Water (for the batter)'
+  - 'Oil for shallow frying'
 preparation:
   - 'Wash the rice well.'
   - 'Boil the milk (on high flame) in a thick bottomed wide-mouthed container stirring it continuously so that it does not burn at the bottom.'
@@ -32,7 +32,7 @@ preparation:
   - 'Heat a tawa (skillet) and pour 2 tsp oil. Pour a 2 tbsp of batter over the heated oil. Spread it to a round shape but do not make it very thin. Cook it on medium-low heat. Once the top is done, flip it to cook the other side. If the oil seems less, pour a little bit around the edges.'
   - 'This batter should yield almost 8 poodas.'
 credits:
-  author: easyfoodsmith
-  link: http://www.foodista.com/recipe/WZ82F5RR/saffron-infused-rice-pudding-with-sweetened-whole-wheat-pancakes
-  photocredit: easyfoodsmith
-  photolink: http://cf2.foodista.com/sites/default/files/Kheer%20Pooda_0.jpg
+  author: 'easyfoodsmith'
+  link: 'http://www.foodista.com/recipe/WZ82F5RR/saffron-infused-rice-pudding-with-sweetened-whole-wheat-pancakes'
+  photocredit: 'easyfoodsmith'
+  photolink: 'http://cf2.foodista.com/sites/default/files/Kheer%20Pooda_0.jpg'
