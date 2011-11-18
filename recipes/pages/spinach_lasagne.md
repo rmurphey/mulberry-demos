@@ -6,5 +6,6 @@ template:
 
 # these should optionally point at an image in the images dir
 featured_image: spinach_lasagne.jpg
-data: spinach_lasagne.yml
+data:
+  - spinach_lasagne.yml
 ---

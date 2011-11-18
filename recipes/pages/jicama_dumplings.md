@@ -5,7 +5,8 @@ template:
   tablet: recipe-tablet
 
 featured_image: jicama_dumplings.jpg
-data: jicama_dumplings.yml
+data:
+  - jicama_dumplings.yml
 ---
 
 'Jicama Dumplings', or in Hokkien Chinese, 'Chai Kueh'. Not to be mistaken for 'Pot Stickers', altho these could easily stick to a pot if you let them.

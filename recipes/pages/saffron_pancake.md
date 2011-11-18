@@ -5,7 +5,8 @@ template:
   tablet: recipe-tablet
 
 featured_image: saffron_pancake.jpg
-data: saffron_pancake.yml
+data:
+  - saffron_pancake.yml
 ---
 
 Monsoon is welcomed in the state of Punjab – with Kheer i.e. milk and rice pudding. There goes a saying in Punjabi “Je saawan kheer na khaadi aa, kyon jeena ae apradhiya” which translates to – “one who hasn’t eaten kheer during the monsoon is a sinner and has no reason to be alive!!” So much is the importance of this luxurious and creamy dessert in Punjab.

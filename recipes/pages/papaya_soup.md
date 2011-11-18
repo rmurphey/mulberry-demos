@@ -5,7 +5,8 @@ template:
   tablet: recipe-tablet
 
 featured_image: papaya_soup.jpg
-data: papaya_soup.yml
+data:
+  - papaya_soup.yml
 ---
 
 This soup is an adaption of the French chef par excellence, Roger Vergé ‘s Soup de Melon et De Papayes au Jasmin from his book Cooking with Fruits. My dear friend lent me this book to browse – I was totally fascinated at how wonderfully he was able to make a mélange of recipes with fruits.

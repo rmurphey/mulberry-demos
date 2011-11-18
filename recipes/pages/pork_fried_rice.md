@@ -5,5 +5,6 @@ template:
   tablet: recipe-tablet
 
 featured_image: pork_fried_rice.jpg
-data: pork_fried_rice.yml
+data:
+  - pork_fried_rice.yml
 ---
