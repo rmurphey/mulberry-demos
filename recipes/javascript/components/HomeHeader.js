@@ -25,15 +25,13 @@ dojo.declare('client.components.HomeHeader', [ toura.components.HeaderImage ], {
   _offsetImage: function() {
     var img = this.image,
         h = this._getHeight(),
-        $node = $(this.imageNode),
-        imgheight = $node.height(),
+        imgheight = dojo.position(this.imageNode).h,
         voffset = img ? imgheight - h/2 : 0;
 
     // voffset should always be positive
     if(voffset < 0) { voffset = 0; }
-    $node.css('margin-top', -voffset);
-    
-    // also fire /content/update to be sure scrollers all still work
+    dojo.style(this.imageNode, 'margin-top', -voffset + 'px');
+
     dojo.publish('/content/update', [{}]);
   },
 
