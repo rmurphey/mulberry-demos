@@ -1,9 +1,4 @@
 .component.image-header {
-  background: {
-    position: center;
-    size: cover;
-  };
-  
   h1 {
     background-color: $headerbg;
     position: absolute;
@@ -43,5 +38,11 @@
         weight: normal;
       }
     }
+  }
+
+  > div {
+    height: 100%;
+    background-position: center;
+    background-size: cover;
   }
 }
