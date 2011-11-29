@@ -1,7 +1,7 @@
 ---
 title: French
 template:
-  phone: default
+  phone: grid-view
   tablet: grid-view
 featured_image: coq_au_vin.jpg
 ---
