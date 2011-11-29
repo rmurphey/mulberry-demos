@@ -29,7 +29,7 @@ dojo.declare('client.components.HomeHeader', [ toura.components.HeaderImage ], {
         voffset = img ? imgheight - h/2 : 0;
 
     // voffset should always be positive
-    if(voffset < 0) { voffset = 0; }
+    if (voffset < 0) { voffset = 0; }
     dojo.style(this.imageNode, 'margin-top', -voffset + 'px');
 
     dojo.publish('/content/update', [{}]);
