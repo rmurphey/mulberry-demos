@@ -10,6 +10,6 @@ mulberry.component('PhotoViewTwo', {
     this.children = dojo.filter(this.node.children || [], function(child) {
       return child.featuredImage !== undefined;
     });
-  },
+  }
 
 });
