@@ -32,7 +32,7 @@ dojo.declare('client.components.HomeHeader', [ toura.components.HeaderImage ], {
     if (voffset < 0) { voffset = 0; }
     dojo.style(this.imageNode, 'margin-top', -voffset + 'px');
 
-    dojo.publish('/content/update', [{}]);
+    dojo.publish('/content/update');
   },
 
   _resizeImage: function() {
