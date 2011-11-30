@@ -1,0 +1,13 @@
+photo-view-two:
+  type: node
+  screens:
+  - name: index
+    regions:
+      - type: row
+        size: fixed
+        components:
+          - PageNav
+      - type: row
+        scrollable: true
+        components:
+          - custom.PhotoViewTwo

@@ -4,7 +4,7 @@
 // base styles
 .main-recipe {
   padding: 10px;
-  
+
   h1, h2, h3, h4 {
     font:{
       family: $headers;
@@ -12,7 +12,7 @@
     };
     margin-bottom: 6px;
   }
-  
+
   .component li {
     margin-left: 0;
     padding-left: 20px;
@@ -28,7 +28,7 @@
       visibility: hidden;
     }
   }
-  
+
   .top {
     background: $navbg;
   }
@@ -36,7 +36,7 @@
 
 .component.app-nav {
   background: $navbg;
-  
+
   .tablet & {
     width: auto;
     margin: 0;
@@ -49,16 +49,16 @@
 
 .component.body-text {
   font-family: Georgia, serif;
-  
+
   .phone & {
     padding: 0 10px;
     margin-top: 1em;
-    
+
     h2 {
       font-size: 20px;
-    }    
+    }
   }
-  
+
   .tablet .main-body-text & {
     padding: 10px;
     border-bottom: 1px solid #999;
@@ -69,16 +69,29 @@
   -webkit-box-shadow: none;
 }
 
+@mixin blackoverlay {
+  position: absolute;
+  background-color: $headerbg;
+  color: white;
+  max-width: 75%;
+  padding: 5px 10px;
+  font: {
+    family: $headers;
+    weight: normal;
+  };
+}
+
 .component.child-node-grid {
   .tablet & {
     // need the size-large/size-medium to be sure we get sufficient priority in the cascade
     &.size-large li, &.size-medium li {
       height: auto;
     }
-    
+
     li {
-      
+
       h3 {
+        /*
         position: absolute;
         bottom: 25px;
         color: white;
@@ -88,10 +101,30 @@
         font: {
           family: $headers;
           weight: normal;
-          size: 18px;
+          size: 21px;
         };
+        */
+        @include blackoverlay;
+        bottom: 25px;
+        padding: 5px 10px;
+        max-width: 75%;
+        font-size: 21px;
+        line-height: 21px;
       }
     }
+  }
+}
+
+.component.photo-view {
+  .image {
+    height: 250px;
+  }
+  h3 {
+    @include blackoverlay;
+    font-size: 18px;
+    bottom: 12px;
+    max-width: 85%;
+    padding: 5px 10px;
   }
 }
 

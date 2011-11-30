@@ -1,0 +1,41 @@
+$row: 60px;
+$lipad: 3px;
+
+.component.photo-view-two {
+  li {
+    border-top: 1px solid #eee;
+    border-bottom: 1px solid #999;
+    background-color: #ccc;
+    padding: $lipad;
+    text-shadow: 0 1px 0 white;
+
+    &:nth-child(2n) {
+      background-color: #aaa;
+      text-shadow: 0 1px 0 rgba(255,255,255,.75);
+    }
+
+    background: {
+      image: url('../icons/#{$user-font-scheme}/chevron.png');
+      repeat: no-repeat;
+      position: 98% center;
+      size: 8px 20px;
+    }
+  }
+
+  a, a:visited {
+    color: #333;
+  }
+
+  .image {
+    height: $row;
+    width: $row;
+    background-size: cover;
+    float: left;
+    margin: -$lipad;
+    margin-right: 10px;
+  }
+
+  span {
+    font-weight: 600;
+  }
+}
