@@ -7,11 +7,18 @@ ol.component.preparation-list {
     }
 
     li {
-      background-color: #f7f3f2;
-      background-image: url('./resources/pages_shadow-left-corner.png');
-      margin: 10px 0 20px;
-      padding: 10px 10px 10px 30px;
-      box-shadow: 0 2px 5px rgba(0,0,0,.15);
+      margin: 10px 0 15px;
+      padding-right: 10px;
+      > div {
+        background-color: #f7f3f2;
+        padding: 10px 10px 10px 30px;
+        margin-left:-10px;
+      }
+      background: {
+        image: url('resources/pages_shadow-left-corner.png'), url('resources/pages_shadow-right-corner.png');
+        position: bottom left, bottom right;
+        repeat: no-repeat;
+      };
     }
   }
 }
