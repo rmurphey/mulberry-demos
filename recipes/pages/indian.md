@@ -1,7 +1,7 @@
 ---
 title: Indian
 template:
-  phone: default
+  phone: grid-view
   tablet: grid-view
 
 featured_image: modak.jpg

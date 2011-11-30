@@ -1,23 +1,18 @@
 .component.image-header {
-  background: {
-    position: center;
-    size: cover;
-  };
-  
   h1 {
     background-color: $headerbg;
     position: absolute;
     left: 0;
     color: white;
   }
-  
+
   .phone & {
     height: 200px;
 
     @media screen and (max-height: 320px) {
       display: none;
-    } 
-    
+    }
+
     h1 {
       bottom: 25px;
       width: 100%;
@@ -28,14 +23,14 @@
       };
     }
   }
-  
+
   .tablet & {
     height: 400px;
-    
+
     h1 {
       bottom: 50px;
       max-width: 75%;
-      
+
       padding: 10px 20px;
       font:{
         family: $headers;
@@ -43,5 +38,11 @@
         weight: normal;
       }
     }
+  }
+
+  > header {
+    height: 100%;
+    background-position: center;
+    background-size: cover;
   }
 }
