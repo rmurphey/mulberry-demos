@@ -14,17 +14,19 @@ $lipad: 3px;
       text-shadow: 0 1px 0 rgba(255,255,255,.75);
     }
 
-    background: {
-      image: url('../icons/#{$user-font-scheme}/chevron.png');
-      repeat: no-repeat;
-      position: 98% center;
-      size: 8px 20px;
+    a, a:visited {
+      color: #333;
+      overflow: hidden;
+      display: block;
+      background: {
+        image: url('../icons/#{$user-font-scheme}/chevron.png');
+        repeat: no-repeat;
+        position: 98% center;
+        size: 8px 20px;
+      }
     }
   }
 
-  a, a:visited {
-    color: #333;
-  }
 
   .image {
     height: $row;

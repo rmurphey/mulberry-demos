@@ -70,6 +70,69 @@
   -webkit-box-shadow: none;
 }
 
+@mixin pagecurls {
+  background: {
+    image: url('resources/images/shadow-left-corner.png'), url('resources/images/shadow-right-corner.png');
+    position: bottom left, bottom right;
+    repeat: no-repeat;
+  };
+  > * {
+    box-shadow: 0 2px 1px rgba(0,0,0,.05);
+  }
+}
+
+ol.component.preparation-list {
+  .phone & {
+    li {
+      margin: 10px 0 15px;
+      padding-right: 10px;
+      > div {
+        background-color: #f9f8f6;
+        padding: 10px 10px 10px 30px;
+        margin-left:-10px;
+        //box-shadow: 0 2px 1px rgba(0,0,0,.05);
+      }
+      @include pagecurls;
+    }
+  }
+}
+
+.component.photo-view-two {
+  .phone & {
+    margin-top: 5px;
+    li {
+      margin: 0 10px;
+      padding: 0;
+      &, &:nth-child(2n) {    // have to undo the nth-child styling
+        background-color: transparent;
+      }
+      border: none;
+      @include pagecurls;
+
+      a {
+        display: block;
+        overflow: hidden;
+        background-color: #f9f8f6;
+        margin: 10px;
+      }
+
+      &:nth-child(4n+1) {
+        -webkit-transform: rotate(-.75deg);
+      }
+      &:nth-child(4n+2) {
+        -webkit-transform: rotate(.5deg);
+      }
+      &:nth-child(4n+3) {
+        -webkit-transform: rotate(-1.25deg);
+      }
+      &:nth-child(4n) {
+        -webkit-transform: rotate(1deg);
+      }
+    }
+  }
+}
+
+
 @mixin blackoverlay {
   position: absolute;
   background-color: $headerbg;
@@ -92,19 +155,6 @@
     li {
 
       h3 {
-        /*
-        position: absolute;
-        bottom: 25px;
-        color: white;
-        background-color: $headerbg;
-        padding: 5px 10px;
-        max-width: 75%;
-        font: {
-          family: $headers;
-          weight: normal;
-          size: 21px;
-        };
-        */
         @include blackoverlay;
         bottom: 25px;
         padding: 5px 10px;
