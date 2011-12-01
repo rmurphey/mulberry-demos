@@ -56,7 +56,7 @@
 
   .component li {
     margin-left: 0;
-    padding-left: 20px;
+    padding-left: 24px;
     text-indent: -20px;
   }
 }
@@ -116,16 +116,36 @@ ol.component.preparation-list {
     li {
       margin: 10px 0 15px;
       padding-right: 10px;
+
       > div {
-        //background-color: #f9f8f6;
-        @include tiledbg('resources/images/lined_paper_blue2.png');
-        background-position: 0 10px;
+        background-color: #f9f8f6;
         padding: 10px 10px 10px 30px;
-        margin-left:-10px;
-        //box-shadow: 0 2px 1px rgba(0,0,0,.05);
+        margin: 0 0 2px -14px; // lining up the curls
       }
+
       @include pagecurls;
     }
+  }
+}
+
+.component.ingredients-list {
+  .phone & {
+    h2 {
+      border-bottom: none;
+    }
+  }
+
+  margin: 10px 10px 15px;
+
+  @include pagecurls;
+
+  > div {
+    margin-bottom: 10px;
+    padding: 10px;
+    background-image: url('resources/images/redline.png'), url('resources/images/lined_paper_blue2.png');
+    background-size: auto;
+    background-repeat: repeat-x, repeat;
+    background-position: 0 1px, 0 5px;
   }
 }
 
