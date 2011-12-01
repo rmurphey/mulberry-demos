@@ -1,0 +1,15 @@
+todos:
+  screens:
+    - name: index
+      regions:
+        - type: row
+          components:
+            - TodoForm
+        - type: row
+          scrollable: true
+          components:
+            - TodoList
+        - type: row
+          size: fixed
+          components:
+            - TodoManager
