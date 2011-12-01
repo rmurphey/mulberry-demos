@@ -101,7 +101,6 @@
 
     h2 {
       font-size: 24px;
-      border-bottom: 1px dashed #333;
     }
   }
 
@@ -117,6 +116,11 @@
 
 ol.component.preparation-list {
   .phone & {
+    h2 {
+      margin-left: 20px;
+      margin-bottom: -10px;
+    }
+
     li {
       margin: 10px 0 15px;
       padding-right: 10px;
@@ -124,7 +128,7 @@ ol.component.preparation-list {
       > div {
         background-color: #f9f8f6;
         padding: 10px 10px 10px 30px;
-        margin: 0 0 2px -14px; // lining up the curls
+        margin: 0 0 11px -14px; // lining up the curls
       }
 
       @include pagecurls;
