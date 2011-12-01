@@ -1,1 +1,4 @@
-.component.todo-form (This is the TodoForm component)
+%form.component.todo-form
+  %fieldset
+    %input{ type : 'text', placeholder : 'description', dojoAttachPoint : 'descriptionInput' }
+  %button{ dojoAttachPoint : 'saveButton' } Save

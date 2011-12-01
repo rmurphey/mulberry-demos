@@ -1,7 +1,15 @@
 dojo.provide('client.data.todos');
 
-dojo.require('dojo.store.Memory');
+mulberry.datasource('todos', {
+  key : 'todos',
 
-dojo.declare('client.data.todos', dojo.store.Memory, {
+  complete : function(id) {
+    var item = this.store.get(id);
+    this.put(dojo.mixin(item, { complete : true }));
+  },
 
+  uncomplete : function(id) {
+    var item = this.store.get(id);
+    this.put(dojo.mixin(item, { complete : false }));
+  }
 });

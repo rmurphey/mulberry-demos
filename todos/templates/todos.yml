@@ -1,15 +1,21 @@
 todos:
+  capabilities:
+  - name: TodoPage
+    components:
+    - index:custom.TodoForm
+    - index:custom.TodoList
+    - index:custom.TodoManager
   screens:
     - name: index
       regions:
         - type: row
           components:
-            - TodoForm
+            - custom.TodoForm
         - type: row
           scrollable: true
           components:
-            - TodoList
+            - custom.TodoList
         - type: row
           size: fixed
           components:
-            - TodoManager
+            - custom.TodoManager

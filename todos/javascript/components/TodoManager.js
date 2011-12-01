@@ -3,11 +3,11 @@ dojo.provide('client.components.TodoManager');
 mulberry.component('TodoManager', {
   componentTemplate : dojo.cache('client.components', 'TodoManager/TodoManager.haml'),
 
-  prep : function() {
-
+  init : function() {
+    this.connect(this.clearCompletedButton, 'click', 'onClearCompleted');
+    this.connect(this.clearAllButton, 'click', 'onClearAll');
   },
 
-  init : function() {
-
-  }
+  onClearCompleted : function() { },
+  onClearAll : function() { }
 });
