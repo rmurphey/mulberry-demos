@@ -1,5 +1,24 @@
 /* override theme defaults in this file */
 
+@mixin tiledbg($url) {
+  background-image: url($url);
+  background-size: auto;
+  background-repeat: repeat;
+}
+
+// background washes
+.page {
+  .phone & {
+    &.photo-view-two {;
+      background-image: url('resources/images/batthern.png');
+      background-size: auto;
+      background-repeat: repeat;
+    }
+    &.recipe-phone {
+      @include tiledbg('resources/images/lined_paper_blue.png');
+    }
+  }
+}
 
 // base styles
 .main-recipe {
@@ -101,6 +120,7 @@ ol.component.preparation-list {
   .phone & {
     margin-top: 5px;
     li {
+      $apad: 5px;
       margin: 0 10px;
       padding: 0;
       &, &:nth-child(2n) {    // have to undo the nth-child styling
@@ -114,19 +134,27 @@ ol.component.preparation-list {
         overflow: hidden;
         background-color: #f9f8f6;
         margin: 10px;
+        padding: $apad;
+      }
+      .image {
+        margin: {
+          left: -$apad;
+          top: -$apad;
+          bottom: -$apad;
+        }
       }
 
       &:nth-child(4n+1) {
-        -webkit-transform: rotate(-.75deg);
+        -webkit-transform: rotate3d(0,0,0,-.75deg);
       }
       &:nth-child(4n+2) {
-        -webkit-transform: rotate(.5deg);
+        -webkit-transform: rotate3d(0,0,0,.5deg);
       }
       &:nth-child(4n+3) {
-        -webkit-transform: rotate(-1.25deg);
+        -webkit-transform: rotate3d(0,0,0,-.25deg);
       }
       &:nth-child(4n) {
-        -webkit-transform: rotate(1deg);
+        -webkit-transform: rotate3d(0,0,0,1deg);
       }
     }
   }
