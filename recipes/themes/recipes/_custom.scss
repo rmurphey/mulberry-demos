@@ -6,22 +6,44 @@
   background-repeat: repeat;
 }
 
+@mixin pagecurls {
+  background: {
+    image: url('resources/images/shadow-left-corner.png'), url('resources/images/shadow-right-corner.png');
+    position: bottom left, bottom right;
+    repeat: no-repeat;
+  };
+  > * {
+    box-shadow: 0 2px 1px rgba(0,0,0,.05);
+  }
+}
+
+@mixin blackoverlay {
+  position: absolute;
+  background-color: $headerbg;
+  color: white;
+  max-width: 75%;
+  padding: 5px 10px;
+  font: {
+    family: $headers;
+    weight: normal;
+  };
+}
+
+
 // background washes
 .page {
   .phone & {
     &.photo-view-two {;
-      background-image: url('resources/images/batthern.png');
-      background-size: auto;
-      background-repeat: repeat;
+      @include tiledbg('resources/images/batthern.png');
     }
     &.recipe-phone {
-      @include tiledbg('resources/images/lined_paper_blue.png');
+      @include tiledbg('resources/images/batthern-lt.png');
     }
   }
 }
 
 // base styles
-.main-recipe {
+.region.main-recipe {
   padding: 10px;
 
   h1, h2, h3, h4 {
@@ -89,24 +111,15 @@
   -webkit-box-shadow: none;
 }
 
-@mixin pagecurls {
-  background: {
-    image: url('resources/images/shadow-left-corner.png'), url('resources/images/shadow-right-corner.png');
-    position: bottom left, bottom right;
-    repeat: no-repeat;
-  };
-  > * {
-    box-shadow: 0 2px 1px rgba(0,0,0,.05);
-  }
-}
-
 ol.component.preparation-list {
   .phone & {
     li {
       margin: 10px 0 15px;
       padding-right: 10px;
       > div {
-        background-color: #f9f8f6;
+        //background-color: #f9f8f6;
+        @include tiledbg('resources/images/lined_paper_blue2.png');
+        background-position: 0 10px;
         padding: 10px 10px 10px 30px;
         margin-left:-10px;
         //box-shadow: 0 2px 1px rgba(0,0,0,.05);
@@ -160,18 +173,6 @@ ol.component.preparation-list {
   }
 }
 
-
-@mixin blackoverlay {
-  position: absolute;
-  background-color: $headerbg;
-  color: white;
-  max-width: 75%;
-  padding: 5px 10px;
-  font: {
-    family: $headers;
-    weight: normal;
-  };
-}
 
 .component.child-node-grid {
   .tablet & {
