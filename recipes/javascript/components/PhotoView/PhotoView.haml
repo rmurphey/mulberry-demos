@@ -1,0 +1,6 @@
+%ul.component.photo-view
+  :each c in children
+    %li
+      %a{ href : c.url }
+        .image{ dojoType: 'toura.ui.BackgroundImage', imageUrl: c.featuredImage.large.url, loadOnInit: true }
+        %h3 =c.name

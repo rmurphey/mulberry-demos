@@ -1,7 +1,7 @@
 ---
 title: Italian
 template:
-  phone: grid-view
+  phone: photo-view-two
   tablet: grid-view
 featured_image: spinach_malfatti.jpg
 ---

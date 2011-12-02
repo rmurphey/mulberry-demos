@@ -1,0 +1,13 @@
+photo-view:
+  type: node
+  screens:
+  - name: index
+    regions:
+      - type: row
+        size: fixed
+        components:
+          - PageNav
+      - type: row
+        scrollable: true
+        components:
+          - custom.PhotoView

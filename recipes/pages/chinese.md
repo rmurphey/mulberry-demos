@@ -1,7 +1,7 @@
 ---
 title: Chinese
 template:
-  phone: grid-view
+  phone: photo-view-two
   tablet: grid-view
 
 featured_image: pork_fried_rice.jpg

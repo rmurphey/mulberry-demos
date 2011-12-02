@@ -8,11 +8,12 @@
     right: 0;
     bottom: 25%;
     font: {
+      size: 24px;
       family: $headers;
       weight: normal;
     };
   }
-  
+
   .tablet & {
     h1 {
       font-size: 30px;

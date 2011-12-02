@@ -28,7 +28,7 @@ name: recipes
 # Presently there is only one theme, the default theme. We need to document how
 # to create additional themes.
 theme:
-  name: default
+  name: recipes
   settings:
     font-scheme:        'dark'
     link-color:         '#0000ff'

@@ -1,0 +1,243 @@
+/* override theme defaults in this file */
+
+@mixin tiledbg($url) {
+  background-image: url($url);
+  background-size: auto;
+  background-repeat: repeat;
+}
+
+@mixin pagecurls {
+  background: {
+    image: url('resources/images/shadow-left-corner.png'), url('resources/images/shadow-right-corner.png');
+    position: bottom left, bottom right;
+    repeat: no-repeat;
+  };
+  > * {
+    box-shadow: 0 2px 1px rgba(0,0,0,.05);
+  }
+}
+
+@mixin blackoverlay {
+  position: absolute;
+  background-color: $headerbg;
+  color: white;
+  max-width: 75%;
+  padding: 5px 10px;
+  font: {
+    family: $headers;
+    weight: normal;
+  };
+}
+
+
+// background washes
+.page {
+  .phone & {
+    &.home_grid_phone {
+      background-color: #153323;
+    }
+
+    &.photo-view-two {
+      @include tiledbg('resources/images/batthern.png');
+    }
+
+    &.recipe-phone {
+      @include tiledbg('resources/images/batthern-lt.png');
+    }
+  }
+}
+
+// base styles
+.region.main-recipe {
+  padding: 10px;
+
+  h1, h2, h3, h4 {
+    font:{
+      family: $headers;
+      weight: normal;
+    };
+    margin-bottom: 6px;
+  }
+
+  .component li {
+    margin-left: 0;
+    padding: {
+      left: 24px;
+      bottom: 0;
+    }
+    text-indent: -20px;
+    line-height: 1.6;
+  }
+}
+
+
+// component styles
+.component.page-nav {
+  .hideTitle & {
+    h1 {
+      visibility: hidden;
+    }
+  }
+
+  .top {
+    background: $navbg;
+  }
+}
+
+.component.app-nav {
+  background: $navbg;
+
+  .tablet & {
+    width: auto;
+    margin: 0;
+    -webkit-border-radius: 0;
+    li, li a {
+      height: 25px;
+    }
+  }
+}
+
+.component.body-text {
+  font-family: Georgia, serif;
+
+  .phone & {
+    padding: 0 10px;
+    margin-top: 1em;
+
+    h2 {
+      font-weight:bold;
+      font-size: 24px;
+    }
+  }
+
+  .tablet .main-body-text & {
+    padding: 10px;
+    border-bottom: 1px solid #999;
+  }
+}
+
+.component.page-header-image {
+  -webkit-box-shadow: none;
+}
+
+ol.component.preparation-list {
+  .phone & {
+    li {
+      margin: 10px 0 15px;
+      padding-right: 10px;
+
+      > div {
+        background-color: #fdfdff;
+        padding: 10px 10px 10px 30px;
+        margin: 0 0 2px -14px; // lining up the curls
+      }
+
+      @include pagecurls;
+    }
+  }
+}
+
+.component.ingredients-list {
+  .phone & {
+    h2 {
+      border-bottom: none;
+    }
+  }
+
+  margin: 10px 0 15px;
+
+  @include pagecurls;
+
+  > div {
+    margin-bottom: 10px;
+    padding: 10px;
+    background-image: url('resources/images/redline.png'), url('resources/images/lined_paper_blue3.png');
+    background-size: auto;
+    background-repeat: repeat-x, repeat;
+    background-position: 0 1px, 0 2px;
+  }
+}
+
+.component.photo-view-two {
+  .phone & {
+    margin-top: 5px;
+    li {
+      font: {
+        family: $headers;
+        weight: normal;
+        size: 20px;
+      };
+      $apad: 5px;
+      margin: 0 10px;
+      padding: 0;
+      &, &:nth-child(2n) {    // have to undo the nth-child styling
+        background-color: transparent;
+      }
+      border: none;
+      @include pagecurls;
+
+      a {
+        display: block;
+        overflow: hidden;
+        background-color: #f9f8f6;
+        margin: 10px;
+        padding: $apad;
+        padding-right: 20px;
+      }
+      .image {
+        margin: {
+          left: -$apad;
+          top: -$apad;
+          bottom: -$apad;
+        }
+      }
+    }
+  }
+}
+
+
+.component.child-node-grid {
+  .tablet & {
+    // need the size-large/size-medium to be sure we get sufficient priority in the cascade
+    &.size-large li, &.size-medium li {
+      height: auto;
+    }
+
+    li {
+
+      h3 {
+        @include blackoverlay;
+        bottom: 25px;
+        padding: 5px 10px;
+        max-width: 75%;
+        font-size: 21px;
+        line-height: 21px;
+      }
+    }
+  }
+}
+
+.component.photo-view {
+  .image {
+    height: 250px;
+  }
+  h3 {
+    @include blackoverlay;
+    font-size: 18px;
+    bottom: 12px;
+    max-width: 85%;
+    padding: 5px 10px;
+  }
+}
+
+// other tablet styles
+.tablet {
+  .ingredients-column {
+    width: 472px; /* the width gets halved because of some weird issue with flexbox */
+  }
+}
+
+.component.app-nav,
+.component.page-nav .top {
+  background-color: #153323;
+}
