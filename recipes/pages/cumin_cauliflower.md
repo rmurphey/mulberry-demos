@@ -6,17 +6,17 @@ template:
 
 featured_image: cumin_cauliflower.jpg
 ingredients:
-  - 1 head of cauliflower, your choice of color
-  - 1 Tbsp ground cumin
-  - 3 Tbsp extra virgin olive oil
-  - 1/2 tsp Kosher salt (or to taste)
-  - Chives to garnish
+  - "1 head of cauliflower, your choice of color"
+  - "1 Tbsp ground cumin"
+  - "3 Tbsp extra virgin olive oil"
+  - "1/2 tsp Kosher salt (or to taste)"
+  - "Chives to garnish"
 preparation:
-  - Preheat oven to 400 F
-  - Remove the thick green leaves from your cauliflower and cut into tiny florets. I usually make my florets or slices 1-inch long and 1/4-inch thick.
-  - Place cauliflower in a baking or casserole dish. Sprinkle with cumin and shake or stir to coat the cauliflower.
-  - Drizzle with olive oil, season with salt and bake for 25-30 minutes or until the cauliflower is tender and edges are beginning to turn golden brown. I tend to "overcook" mine until the cauliflower is super crispy, but it is completely up to you!
-  - Serve warm with a sprinkle of freshly minced chives.
+  - "Preheat oven to 400 F"
+  - "Remove the thick green leaves from your cauliflower and cut into tiny florets. I usually make my florets or slices 1-inch long and 1/4-inch thick."
+  - "Place cauliflower in a baking or casserole dish. Sprinkle with cumin and shake or stir to coat the cauliflower."
+  - "Drizzle with olive oil, season with salt and bake for 25-30 minutes or until the cauliflower is tender and edges are beginning to turn golden brown. I tend to \"overcook\" mine until the cauliflower is super crispy, but it is completely up to you!"
+  - "Serve warm with a sprinkle of freshly minced chives."
 credits:
   author: Kelsey Ganes
   link: http://www.foodista.com/recipe/3RXVZKBQ/cumin-roasted-cauliflower

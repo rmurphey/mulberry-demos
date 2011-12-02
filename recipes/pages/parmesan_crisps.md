@@ -6,11 +6,11 @@ template:
 
 featured_image: parmesan_crisps.jpg
 ingredients:
-  - 1/2 cup Parmesan cheese
+  - "1/2 cup Parmesan cheese"
 preparation:
-  - Preheat oven to 400 degrees F.
-  - Pour a heaping tablespoon of Parmesan onto a silicone or parchment lined baking sheet and lightly pat down. A silicone baking sheet is highly recommended. Repeat with the remaining cheese, spacing the spoonfuls about a 1/2 inch apart.
-  - Bake for 3 to 5 minutes or until golden and crisp. Cool.
+  - "Preheat oven to 400 degrees F."
+  - "Pour a heaping tablespoon of Parmesan onto a silicone or parchment lined baking sheet and lightly pat down. A silicone baking sheet is highly recommended. Repeat with the remaining cheese, spacing the spoonfuls about a 1/2 inch apart."
+  - "Bake for 3 to 5 minutes or until golden and crisp. Cool."
 credits:
   author: Sheri Wetherell
   link: http://www.foodista.com/recipe/FNKDVZYS/parmesan-crisps
