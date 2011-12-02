@@ -33,9 +33,14 @@
 // background washes
 .page {
   .phone & {
-    &.photo-view-two {;
+    &.home_grid_phone {
+      background-color: #153323;
+    }
+
+    &.photo-view-two {
       @include tiledbg('resources/images/batthern.png');
     }
+
     &.recipe-phone {
       @include tiledbg('resources/images/batthern-lt.png');
     }
@@ -100,8 +105,8 @@
     margin-top: 1em;
 
     h2 {
+      font-weight:bold;
       font-size: 24px;
-      border-bottom: 1px dashed #333;
     }
   }
 
@@ -122,7 +127,7 @@ ol.component.preparation-list {
       padding-right: 10px;
 
       > div {
-        background-color: #f9f8f6;
+        background-color: #fdfdff;
         padding: 10px 10px 10px 30px;
         margin: 0 0 2px -14px; // lining up the curls
       }
@@ -139,7 +144,7 @@ ol.component.preparation-list {
     }
   }
 
-  margin: 10px 10px 15px;
+  margin: 10px 0 15px;
 
   @include pagecurls;
 
@@ -157,6 +162,11 @@ ol.component.preparation-list {
   .phone & {
     margin-top: 5px;
     li {
+      font: {
+        family: $headers;
+        weight: normal;
+        size: 20px;
+      };
       $apad: 5px;
       margin: 0 10px;
       padding: 0;
@@ -172,6 +182,7 @@ ol.component.preparation-list {
         background-color: #f9f8f6;
         margin: 10px;
         padding: $apad;
+        padding-right: 20px;
       }
       .image {
         margin: {
@@ -179,19 +190,6 @@ ol.component.preparation-list {
           top: -$apad;
           bottom: -$apad;
         }
-      }
-
-      &:nth-child(4n+1) {
-        -webkit-transform: rotate3d(0,0,0,-.75deg);
-      }
-      &:nth-child(4n+2) {
-        -webkit-transform: rotate3d(0,0,0,.5deg);
-      }
-      &:nth-child(4n+3) {
-        -webkit-transform: rotate3d(0,0,0,-.25deg);
-      }
-      &:nth-child(4n) {
-        -webkit-transform: rotate3d(0,0,0,1deg);
       }
     }
   }
@@ -237,4 +235,9 @@ ol.component.preparation-list {
   .ingredients-column {
     width: 472px; /* the width gets halved because of some weird issue with flexbox */
   }
+}
+
+.component.app-nav,
+.component.page-nav .top {
+  background-color: #153323;
 }
