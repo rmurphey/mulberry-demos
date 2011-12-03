@@ -88,12 +88,6 @@
 }
 
 .component.page-nav {
-  .hideTitle & {
-    h1 {
-      visibility: hidden;
-    }
-  }
-
   .top {
     background: $navbg;
   }
