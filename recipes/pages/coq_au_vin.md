@@ -6,19 +6,19 @@ template:
 
 featured_image: coq_au_vin.jpg
 ingredients:
-  - "1/2 lb bacon slices"
-  - "20 pearl onions, peeled, or 1 large yellow onion, sliced"
-  - "3 lbs chicken thighs and legs, excess fat trimmed, skin ON"
-  - "6 garlic cloves, peeled"
-  - "Salt and pepper to taste"
-  - "2 cups chicken stock"
-  - "2 cups red wine (pinot noir, burgundy, or zinfandel)"
-  - "2 bay leaves"
-  - "Several fresh thyme sprigs"
-  - "Several fresh parsley sprigs"
-  - "1/2 lb button mushrooms, trimmed and roughly chopped"
-  - "2 Tbsp butter"
-  - "Chopped fresh parsley for garnish"
+  - '1/2 lb bacon slices'
+  - '20 pearl onions, peeled, or 1 large yellow onion, sliced'
+  - '3 lbs chicken thighs and legs, excess fat trimmed, skin ON'
+  - '6 garlic cloves, peeled'
+  - 'Salt and pepper to taste'
+  - '2 cups chicken stock'
+  - '2 cups red wine (pinot noir, burgundy, or zinfandel)'
+  - '2 bay leaves'
+  - 'Several fresh thyme sprigs'
+  - 'Several fresh parsley sprigs'
+  - '1/2 lb button mushrooms, trimmed and roughly chopped'
+  - '2 Tbsp butter'
+  - 'Chopped fresh parsley for garnish'
 preparation:
   - "Blanch the bacon to remove some of its saltiness. Drop the bacon into a saucepan of cold water, covered by a couple of inches. Bring to a boil, simmer for 5 minutes, drain. Rinse in cold water, pat dry with paper towels. Cut the bacon into 1 inch by 1/4 inch pieces."
   - "Brown bacon on medium high heat in a dutch oven big enough to hold the chicken, about 10 minutes. Remove the cooked bacon, set aside. Keep the bacon fat in the pan. Working in batches if necessary, add onions and chicken, skin side down. Brown the chicken well, on all sides, about 10 minutes. Halfway through the browning, add the garlic and sprinkle the chicken with salt and pepper."

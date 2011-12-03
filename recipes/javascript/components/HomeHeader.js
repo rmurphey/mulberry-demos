@@ -30,6 +30,7 @@ dojo.declare('client.components.HomeHeader', [ toura.components.HeaderImage ], {
 
     // voffset should always be positive
     if (voffset < 0) { voffset = 0; }
+    voffset += 50;  // fudging it for good looks
     dojo.style(this.imageNode, 'margin-top', -voffset + 'px');
 
     dojo.publish('/content/update');
