@@ -8,41 +8,41 @@ mulberry.capability('TodoPage', {
   },
 
   connects : [
-    [ 'todoForm', 'onSave', '_save' ],
+    [ 'todoForm', 'onAdd', '_add' ],
     [ 'todoList', 'onComplete', '_complete' ],
-    [ 'todoList', 'onUncomplete', '_uncomplete' ],
-    [ 'todoManager', 'onClearCompleted', '_clearCompleted' ],
-    [ 'todoManager', 'onClearAll', '_clearAll' ]
+    [ 'todoList', 'onDelete', '_delete' ],
+    [ 'todoManager', 'onCompleteAll', '_completeAll' ]
   ],
 
   init : function() {
-    this.todos = new client.data.todos();
-    this.todoList.set('todos', this.todos.query());
+    this.todos = client.stores.todos;
+    this._updateList();
   },
 
-  _save : function(item) {
-    this.todos.add(item, { id : 'id' });
-    this.todoList.set('todos', this.todos.query());
+  _delete : function(id) {
+    this.todos.remove(id);
+    this._updateList();
+  },
+
+  _add : function(item) {
+    this.todos.add(item);
+    this._updateList();
   },
 
   _complete : function(id) {
     this.todos.complete(id);
+    this._updateList();
   },
 
-  _uncomplete : function(id) {
-    this.todos.uncomplete(id);
+  _updateList : function() {
+    var items = this.todos.query({ complete : false });
+    console.log('items are', items);
+    this.todoList.set('todos', items);
   },
 
-  _clearCompleted : function() {
-    var t = this.todos;
-
-    this.todoList.clearComplete();
-    t.query({ complete : true }).forEach(function(item) { t.remove(item.id); });
-  },
-
-  _clearAll : function() {
+  _completeAll : function() {
     this.todos.setData([]);
-    this.todoList.set('todos', []);
+    this._updateList();
   }
 });
 

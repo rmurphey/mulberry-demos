@@ -5,10 +5,9 @@ mulberry.component('TodoForm', {
 
   init : function() {
     this.connect(this.saveButton, 'click',  function(e) {
+      e.preventDefault();
       var item = { description : this.descriptionInput.value };
-
-      console.log('item is', item);
-      this.onSave(item);
+      this.onAdd(item);
       this.domNode.reset();
     });
 
@@ -17,5 +16,5 @@ mulberry.component('TodoForm', {
     });
   },
 
-  onSave : function(item) { }
+  onAdd : function(item) { }
 });

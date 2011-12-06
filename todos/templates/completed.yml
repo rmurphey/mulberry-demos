@@ -1,22 +1,16 @@
-todos:
+completed:
   capabilities:
-  - name: TodoPage
+  - name: CompletedPage
     components:
-    - index:custom.TodoForm
     - index:custom.TodoList
-    - index:custom.TodoManager
   screens:
     - name: index
       regions:
         - type: row
           size: fixed
           components:
-          - custom.TodoForm
+            - PageNav
         - type: row
           scrollable: true
           components:
-          - custom.TodoList
-        - type: row
-          size: fixed
-          components:
-          - custom.TodoManager
+            - custom.TodoList
