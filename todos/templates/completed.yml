@@ -1,0 +1,16 @@
+completed:
+  capabilities:
+  - name: CompletedPage
+    components:
+    - index:custom.TodoList
+  screens:
+    - name: index
+      regions:
+        - type: row
+          size: fixed
+          components:
+            - PageNav
+        - type: row
+          scrollable: true
+          components:
+            - custom.TodoList
