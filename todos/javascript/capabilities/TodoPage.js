@@ -36,7 +36,6 @@ mulberry.capability('TodoPage', {
 
   _updateList : function() {
     var items = this.todos.query({ complete : false });
-    console.log('items are', items);
     this.todoList.set('todos', items);
   },
 
