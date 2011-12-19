@@ -8,8 +8,17 @@ mulberry.component('Accelerometer', {
   },
 
   _getAccel : function() {
-    toura.app.PhoneGap.accelerometer.getCurrentAcceleration()
-      .then(dojo.hitch(this, '_showAccel'));
+    var cb = dojo.hitch(this, '_showAccel'),
+        watch;
+
+    if (this.device.os === 'ios') {
+      watch = toura.app.PhoneGap.accelerometer.watchAcceleration(function(res) {
+        toura.app.PhoneGap.accelerometer.getCurrentAcceleration().then(cb);
+        toura.app.PhoneGap.accelerometer.clearWatch(watch);
+      }, function() {}, { frequency: 100 });
+    } else {
+      toura.app.PhoneGap.accelerometer.getCurrentAcceleration().then(cb);
+    }
   },
 
   _showAccel : function(accel) {
