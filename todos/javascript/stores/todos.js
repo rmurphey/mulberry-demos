@@ -1,20 +1,25 @@
 dojo.provide('client.stores.todos');
 
+dojo.require('dojo.Stateful');
+
 mulberry.stores.local('todos', {
   add : function(item) {
-    this.put(dojo.mixin(item, {
-      complete : false,
-      id : this._createId()
-    }));
+    var item = new client.models.Todo(item);
+    item.set('id', this._createId());
+    this.put(item);
   },
 
   complete : function(id) {
     var item = this.get(id);
-    this.put(dojo.mixin(item, { complete : true }));
+    item.set('complete', true);
+    this.put(item);
   },
 
   uncomplete : function(id) {
     var item = this.get(id);
-    this.put(dojo.mixin(item, { complete : false }));
+    item.set('complete', false);
+    this.put(item);
   }
 });
+
+dojo.declare('client.models.Todo', dojo.Stateful, { complete : false });
