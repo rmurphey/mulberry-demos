@@ -1,9 +1,9 @@
+@import 'settings';
 @import 'helpers/mixins';
-@import 'helpers/colors';
 @import 'helpers/forms';
 
 body {
-  @include text-color;
+  color: $text-color;
   font-family: Helvetica Neue, sans-serif;
 }
 
