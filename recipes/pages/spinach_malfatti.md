@@ -6,25 +6,25 @@ template:
 
 featured_image: spinach_malfatti.jpg
 ingredients:
-  - "1½ cups Ricotta cheese"
-  - "2 cups packed fresh spinach"
-  - "1 cup Italian-seasoned bread crumbs or panko"
-  - "2 eggs, beaten"
-  - "¼ cup Parmesan cheese"
-  - "¼ cup minced green onions"
-  - "1 tablespoon basil, finely chopped"
-  - "¼ teaspoon nutmeg"
-  - "1 clove garlic, minced or pressed"
-  - "½ teaspoon salt"
-  - "Flour"
-  - "4 tablespoons butter"
-  - "Approximately 10 sage leaves"
+  - '1½ cups Ricotta cheese'
+  - '2 cups packed fresh spinach'
+  - '1 cup Italian-seasoned bread crumbs or panko'
+  - '2 eggs, beaten'
+  - '¼ cup Parmesan cheese'
+  - '¼ cup minced green onions'
+  - '1 tablespoon basil, finely chopped'
+  - '¼ teaspoon nutmeg'
+  - '1 clove garlic, minced or pressed'
+  - '½ teaspoon salt'
+  - 'Flour'
+  - '4 tablespoons butter'
+  - 'Approximately 10 sage leaves'
 preparation:
-  - "Drain cooked spinach and squeeze out extra liquid until very dry. Combine with all ingredients, except flour. Refrigerate 1 hour."
-  - "Bring pot half full of salted water to a simmer."
-  - "Drop spinach cheese mixture by tablespoons into flour and roll each lightly into long logs. Cut into 1.5 inch dumplings."
-  - "Drop dumplings into the gently simmering water. When they rise to the top, remove with a slotted spoon (approximately 3 to 5 minutes)."
-  - "In a saucepan, heat butter and sage leaves until both are browned and sage leaves are crisp. Spoon butter over malfatti and top with the crisp sage leaves. If preferred, top with more Parmesan cheese."
+  - 'Drain cooked spinach and squeeze out extra liquid until very dry. Combine with all ingredients, except flour. Refrigerate 1 hour.'
+  - 'Bring pot half full of salted water to a simmer.'
+  - 'Drop spinach cheese mixture by tablespoons into flour and roll each lightly into long logs. Cut into 1.5 inch dumplings.'
+  - 'Drop dumplings into the gently simmering water. When they rise to the top, remove with a slotted spoon (approximately 3 to 5 minutes).'
+  - 'In a saucepan, heat butter and sage leaves until both are browned and sage leaves are crisp. Spoon butter over malfatti and top with the crisp sage leaves. If preferred, top with more Parmesan cheese.'
 credits:
   author: Sheri Wetherell
   link: http://www.foodista.com/recipe/PHQ8QRP6/spinach-malfatti-with-sage-brown-butter-sauce

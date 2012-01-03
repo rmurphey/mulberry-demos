@@ -17,7 +17,7 @@ home_grid_phone:
         scrollable: true
         components:
           - BodyText
-          - ChildNodes
+          - custom.PhotoViewTwo
 
     - type: row
       size: fixed
