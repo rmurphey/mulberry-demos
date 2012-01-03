@@ -1,0 +1,12 @@
+.images-and-text-tablet {
+  .screen.index {
+    .image-container {
+      @include background-shadow;
+    }
+  }
+
+  .body-text:not(.empty) {
+    padding: 10px;
+  }
+}
+
