@@ -6,16 +6,11 @@ mulberry.capability('PageTwitterSearch', {
   },
 
   init : function() {
-    var url = this._urlForTerm(this.baseObj.search),
-        twitterComponent = this.twitter;
+    var twitterComponent = this.twitter,
+        term = this.baseObj.search;
 
-    mulberry.jsonp(url).then(function(data) {
-      twitterComponent.set('tweets', data.results);
+    client.stores.Twitter.search(term).then(function(data) {
+      twitterComponent.set('tweets', data);
     });
-  },
-
-  _urlForTerm : function(term) {
-    return 'http://search.twitter.com/search.json?q=' + escape(term);
   }
 });
-

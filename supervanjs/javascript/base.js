@@ -5,3 +5,4 @@
 dojo.require('client.routes');
 dojo.require('client.capabilities.PageTwitterSearch');
 dojo.require('client.components.Twitter');
+dojo.require('client.stores.Twitter');
