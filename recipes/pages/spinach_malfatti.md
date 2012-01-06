@@ -1,6 +1,6 @@
 ---
 title: Spinach Malfatti with Sage Brown Butter Sauce
-template:
+page_def:
   phone: recipe-phone
   tablet: recipe-tablet
 

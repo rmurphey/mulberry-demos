@@ -1,4 +1,4 @@
 ---
 title: Geolocation
-template: geolocation
+page_def: geolocation
 ---

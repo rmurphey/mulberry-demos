@@ -1,6 +1,6 @@
 ---
 title: Cassoulet
-template:
+page_def:
   phone: recipe-phone
   tablet: recipe-tablet
 

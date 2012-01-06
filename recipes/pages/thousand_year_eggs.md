@@ -1,6 +1,6 @@
 ---
 title: Thousand Year Eggs
-template:
+page_def:
   phone: recipe-phone
   tablet: recipe-tablet
 

@@ -1,4 +1,4 @@
 ---
 title: Connection
-template: connection
+page_def: connection
 ---

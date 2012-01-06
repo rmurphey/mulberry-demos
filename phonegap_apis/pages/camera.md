@@ -1,4 +1,4 @@
 ---
 title: Camera
-template: camera
+page_def: camera
 ---

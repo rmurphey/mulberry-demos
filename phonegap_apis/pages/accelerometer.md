@@ -1,4 +1,4 @@
 ---
 title: Accelerometer
-template: accelerometer
+page_def: accelerometer
 ---

@@ -1,6 +1,6 @@
 ---
 title: Indian
-template:
+page_def:
   phone: photo-view-two
   tablet: grid-view
 

@@ -1,6 +1,6 @@
 ---
 title: Coq au Vin
-template:
+page_def:
   phone: recipe-phone
   tablet: recipe-tablet
 

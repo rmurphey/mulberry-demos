@@ -1,6 +1,6 @@
 ---
 title: Modak
-template:
+page_def:
   phone: recipe-phone
   tablet: recipe-tablet
 

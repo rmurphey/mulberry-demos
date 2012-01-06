@@ -1,6 +1,6 @@
 ---
 title: Simmered Italian Sausage & Meatballs
-template:
+page_def:
   phone: recipe-phone
   tablet: recipe-tablet
 

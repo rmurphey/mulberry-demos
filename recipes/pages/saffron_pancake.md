@@ -1,6 +1,6 @@
 ---
 title: Saffron-Infused Rice Pudding with Sweetened Whole-Wheat Pancakes
-template:
+page_def:
   phone: recipe-phone
   tablet: recipe-tablet
 
