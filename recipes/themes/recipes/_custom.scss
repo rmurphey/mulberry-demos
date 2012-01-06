@@ -34,7 +34,7 @@
 .page {
   .phone & {
     &.home_grid_phone {
-      background-color: #153323;
+      @include tiledbg('resources/images/batthern.png');
     }
 
     &.photo-view-two {
@@ -65,20 +65,29 @@
       left: 24px;
       bottom: 0;
     }
-    text-indent: -20px;
+    text-indent: -18px;
     line-height: 1.6;
   }
 }
 
-
 // component styles
-.component.page-nav {
-  .hideTitle & {
-    h1 {
-      visibility: hidden;
+.component.more-drawer {
+  background: $navbg;
+
+  .phone & {
+    section > * {
+      border-top: 1px solid darken($navbg, 10);
     }
   }
+}
+.component.sibling-nav {
+  background: $navbg;
+  .handle {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(lighten($navbg, 10)), to(darken($navbg, 10)));
+  }
+}
 
+.component.page-nav {
   .top {
     background: $navbg;
   }
@@ -105,7 +114,7 @@
     margin-top: 1em;
 
     h2 {
-      font-weight:bold;
+      font-weight: bold;
       font-size: 24px;
     }
   }
@@ -122,6 +131,11 @@
 
 ol.component.preparation-list {
   .phone & {
+    h2 {
+      margin-left: 20px;
+      margin-bottom: -10px;
+    }
+
     li {
       margin: 10px 0 15px;
       padding-right: 10px;
@@ -129,33 +143,43 @@ ol.component.preparation-list {
       > div {
         background-color: #fdfdff;
         padding: 10px 10px 10px 30px;
-        margin: 0 0 2px -14px; // lining up the curls
+        margin: 0 0 11px -14px; // lining up the curls
       }
 
       @include pagecurls;
+    }
+  }
+
+  .tablet & {
+    li {
+      > div {
+        overflow: visible;
+      }
     }
   }
 }
 
 .component.ingredients-list {
   .phone & {
+    margin: 10px 0 15px;
+
     h2 {
       border-bottom: none;
     }
+
+    @include pagecurls;
+
+    > div {
+      margin-bottom: 10px;
+      padding: 10px;
+      background-image: url('resources/images/redline.png'), url('resources/images/lined_paper_blue3.png');
+      background-size: auto;
+      background-repeat: repeat-x, repeat;
+      background-position: 0 1px, 0 2px;
+    }
   }
 
-  margin: 10px 0 15px;
 
-  @include pagecurls;
-
-  > div {
-    margin-bottom: 10px;
-    padding: 10px;
-    background-image: url('resources/images/redline.png'), url('resources/images/lined_paper_blue3.png');
-    background-size: auto;
-    background-repeat: repeat-x, repeat;
-    background-position: 0 1px, 0 2px;
-  }
 }
 
 .component.photo-view-two {
@@ -235,9 +259,4 @@ ol.component.preparation-list {
   .ingredients-column {
     width: 472px; /* the width gets halved because of some weird issue with flexbox */
   }
-}
-
-.component.app-nav,
-.component.page-nav .top {
-  background-color: #153323;
 }

@@ -8,7 +8,6 @@ recipe-tablet:
 
       - type: row
         size: fixed
-        className: hideTitle
         components:
         - PageNav
 

@@ -1,9 +1,9 @@
+@import 'settings';
 @import 'helpers/mixins';
-@import 'helpers/colors';
 @import 'helpers/forms';
 
 body {
-  @include text-color;
+  color: $text-color;
   font-family: Helvetica Neue, sans-serif;
 }
 
@@ -21,7 +21,7 @@ body {
 
 $headers: Baskerville, serif;
 $headerbg: rgba(0,0,0,.8);
-$navbg: #333;
+$navbg: #5f5a50;
 
 @import '../../javascript/components/HomeHeader/home-header';
 @import '../../javascript/components/ImageHeader/image-header';

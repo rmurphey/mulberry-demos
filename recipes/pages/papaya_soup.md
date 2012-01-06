@@ -6,28 +6,28 @@ page_def:
 
 featured_image: papaya_soup.jpg
 ingredients:
-  - "Zest of 1 lemon"
-  - "Juice of 2 limes"
-  - "½ Pineapple"
-  - "1 medium sized papaya"
-  - "¾ cup sweet wine such as Sauternes"
-  - "1/3 cup sugar"
-  - "1 pinch of salt"
-  - "36 very white jasmine flowers"
-  - "6 sprigs of fresh mint"
-  - "White pepper, finely ground"
+  - 'Zest of 1 lemon'
+  - 'Juice of 2 limes'
+  - '½ Pineapple'
+  - '1 medium sized papaya'
+  - '¾ cup sweet wine such as Sauternes'
+  - '1/3 cup sugar'
+  - '1 pinch of salt'
+  - '36 very white jasmine flowers'
+  - '6 sprigs of fresh mint'
+  - 'White pepper, finely ground'
 preparation:
-  - "Grate the lemon for the zest"
-  - "Peel, deseed and cube papayas"
-  - "Peel and dice pineapple"
-  - "Juice the limes"
-  - "Measure ¾ cup of sweet wine"
-  - "Add all the above in a blender with the sugar and the pinch of salt"
-  - "Pour into a wide bowl and add the jasmines and gently stir them in"
-  - "Chill for about 2 hours"
-  - "Strain the soup before serving"
-  - "Garnish each soup bowl with 2 jasmines and a sprig of mint"
-  - "Enjoy"
+  - 'Grate the lemon for the zest'
+  - 'Peel, deseed and cube papayas'
+  - 'Peel and dice pineapple'
+  - 'Juice the limes'
+  - 'Measure ¾ cup of sweet wine'
+  - 'Add all the above in a blender with the sugar and the pinch of salt'
+  - 'Pour into a wide bowl and add the jasmines and gently stir them in'
+  - 'Chill for about 2 hours'
+  - 'Strain the soup before serving'
+  - 'Garnish each soup bowl with 2 jasmines and a sprig of mint'
+  - 'Enjoy'
 credits:
   author: Now Serving
   link: http://www.foodista.com/recipe/6TH8Y5GR/pineapple-papaya-soup-with-jasmine
