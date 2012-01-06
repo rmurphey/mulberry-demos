@@ -1,6 +1,6 @@
 ---
 title: Cumin Roasted Cauliflower
-template:
+page_def:
   phone: recipe-phone
   tablet: recipe-tablet
 

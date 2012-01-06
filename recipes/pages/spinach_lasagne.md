@@ -1,6 +1,6 @@
 ---
 title: Easy Spinach Pesto Lasagne
-template:
+page_def:
   phone: recipe-phone
   tablet: recipe-tablet
 

@@ -1,5 +1,5 @@
 ---
 title: Home
-template:
+page_def:
   phone: todos
 ---

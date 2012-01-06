@@ -1,4 +1,4 @@
 ---
 title: Browser
-template: browser
+page_def: browser
 ---

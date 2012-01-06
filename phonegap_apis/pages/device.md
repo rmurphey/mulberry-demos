@@ -1,4 +1,4 @@
 ---
 title: Device
-template: device
+page_def: device
 ---

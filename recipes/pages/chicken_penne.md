@@ -1,6 +1,6 @@
 ---
 title: Creamy Garlic Chicken and Penne
-template:
+page_def:
   phone: recipe-phone
   tablet: recipe-tablet
 

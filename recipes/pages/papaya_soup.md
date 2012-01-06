@@ -1,6 +1,6 @@
 ---
 title: Pineapple & Papaya Soup with Jasmine
-template:
+page_def:
   phone: recipe-phone
   tablet: recipe-tablet
 

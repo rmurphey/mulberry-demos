@@ -1,4 +1,4 @@
 ---
 title: Notification
-template: notification
+page_def: notification
 ---

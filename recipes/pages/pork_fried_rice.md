@@ -1,6 +1,6 @@
 ---
 title: Pork Fried Rice
-template:
+page_def:
   phone: recipe-phone
   tablet: recipe-tablet
 
