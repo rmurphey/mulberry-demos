@@ -1,10 +1,6 @@
 todos:
   capabilities:
   - name: TodoPage
-    components:
-    - index:custom.TodoForm
-    - index:custom.TodoList
-    - index:custom.TodoManager
   screens:
     - name: index
       regions:

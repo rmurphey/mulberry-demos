@@ -1,8 +1,6 @@
 completed:
   capabilities:
   - name: CompletedPage
-    components:
-    - index:custom.TodoList
   screens:
     - name: index
       regions:
