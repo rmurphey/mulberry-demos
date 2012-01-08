@@ -1,13 +1,7 @@
 dojo.provide('client.stores.todos');
 
-dojo.require('dojo.Stateful');
-
-mulberry.stores.local('todos', {
-  add : function(item) {
-    var item = new client.models.Todo(item);
-    item.set('id', this._createId());
-    this.put(item);
-  },
+mulberry.store('todos', {
+  model : 'Todo',
 
   complete : function(id) {
     var item = this.get(id);
@@ -22,4 +16,4 @@ mulberry.stores.local('todos', {
   }
 });
 
-dojo.declare('client.models.Todo', dojo.Stateful, { complete : false });
+mulberry.model('Todo', { complete : false });
