@@ -35,13 +35,22 @@ mulberry.capability('TodoPage', {
   },
 
   _updateList : function() {
-    var items = this.todos.query({ complete : false });
+    var items = this.todos.query(function(item) {
+      return !item.complete;
+    });
+
     this.todoList.set('todos', items);
   },
 
   _completeAll : function() {
-    this.todos.query({ complete : false })
-      .forEach(function(t) { t.finish(); });
+    var uncompleted = this.todos.query(function(item) {
+      return !item.complete;
+    });
+
+    uncompleted.forEach(dojo.hitch(this, function(t) {
+      t.finish();
+      this.todos.put(t);
+    }));
 
     this._updateList();
   }

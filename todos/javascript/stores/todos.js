@@ -11,15 +11,3 @@ mulberry.store('todos', {
     this.invoke(id, 'unfinish');
   }
 });
-
-mulberry.model('Todo', {
-  complete : false,
-
-  finish : function() {
-    this.set('complete', true);
-  },
-
-  unfinish : function() {
-    this.set('complete', false);
-  }
-});
