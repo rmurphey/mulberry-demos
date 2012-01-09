@@ -4,14 +4,14 @@ mulberry.capability('TodoPage', {
   requirements : {
     todoList : 'custom.TodoList',
     todoForm : 'custom.TodoForm',
-    todoManager : 'custom.TodoManager'
+    todoTools : 'custom.TodoTools'
   },
 
   connects : [
     [ 'todoForm', 'onAdd', '_add' ],
     [ 'todoList', 'onComplete', '_complete' ],
     [ 'todoList', 'onDelete', '_delete' ],
-    [ 'todoManager', 'onCompleteAll', '_completeAll' ]
+    [ 'todoTools', 'onCompleteAll', '_completeAll' ]
   ],
 
   init : function() {

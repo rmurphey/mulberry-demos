@@ -15,4 +15,4 @@ todos:
         - type: row
           size: fixed
           components:
-          - custom.TodoManager
+          - custom.TodoTools

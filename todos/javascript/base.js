@@ -6,6 +6,6 @@ dojo.require('client.routes');
 dojo.require('client.components.TodoForm');
 dojo.require('client.components.TodoList');
 dojo.require('client.capabilities.TodoPage');
-dojo.require('client.components.TodoManager');
+dojo.require('client.components.TodoTools');
 dojo.require('client.stores.todos');
 dojo.require('client.capabilities.CompletedPage');
