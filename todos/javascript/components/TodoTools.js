@@ -1,7 +1,7 @@
-dojo.provide('client.components.TodoManager');
+dojo.provide('client.components.TodoTools');
 
-mulberry.component('TodoManager', {
-  componentTemplate : dojo.cache('client.components', 'TodoManager/TodoManager.haml'),
+mulberry.component('TodoTools', {
+  componentTemplate : dojo.cache('client.components', 'TodoTools/TodoTools.haml'),
 
   init : function() {
     this.connect(this.completeAll, 'click', 'onCompleteAll');
