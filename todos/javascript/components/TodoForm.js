@@ -6,7 +6,13 @@ mulberry.component('TodoForm', {
   init : function() {
     this.connect(this.domNode, 'submit', function(e) {
       e.preventDefault();
-      var item = { description : this.descriptionInput.value };
+
+      var description = dojo.trim(this.descriptionInput.value),
+          item;
+
+      if (!description) { return; }
+
+      item = { description : description };
       this.domNode.reset();
       this.onAdd(item);
     });
