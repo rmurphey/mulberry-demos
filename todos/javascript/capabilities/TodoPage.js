@@ -30,7 +30,7 @@ mulberry.capability('TodoPage', {
   },
 
   _complete : function(id) {
-    this.todos.complete(id);
+    this.todos.finish(id);
     this._updateList();
   },
 
@@ -41,11 +41,8 @@ mulberry.capability('TodoPage', {
 
   _completeAll : function() {
     this.todos.query({ complete : false })
-      .forEach(dojo.hitch(this, function(t) {
-        this.todos.complete(t.id);
-      }));
+      .forEach(function(t) { t.finish(); });
 
     this._updateList();
   }
 });
-

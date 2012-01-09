@@ -21,7 +21,7 @@ mulberry.capability('CompletedPage', {
   },
 
   _uncomplete : function(id) {
-    this.todos.uncomplete(id);
+    this.todos.unfinish(id);
     this._updateList();
   },
 

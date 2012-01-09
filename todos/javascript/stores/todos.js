@@ -3,17 +3,23 @@ dojo.provide('client.stores.todos');
 mulberry.store('todos', {
   model : 'Todo',
 
-  complete : function(id) {
-    var item = this.get(id);
-    item.set('complete', true);
-    this.put(item);
+  finish : function(id) {
+    this.invoke(id, 'finish');
   },
 
-  uncomplete : function(id) {
-    var item = this.get(id);
-    item.set('complete', false);
-    this.put(item);
+  unfinish : function(id) {
+    this.invoke(id, 'unfinish');
   }
 });
 
-mulberry.model('Todo', { complete : false });
+mulberry.model('Todo', {
+  complete : false,
+
+  finish : function() {
+    this.set('complete', true);
+  },
+
+  unfinish : function() {
+    this.set('complete', false);
+  }
+});
