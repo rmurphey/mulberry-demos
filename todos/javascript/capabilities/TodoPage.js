@@ -43,11 +43,9 @@ mulberry.capability('TodoPage', {
   },
 
   _completeAll : function() {
-    var uncompleted = this.todos.query(function(item) {
+    this.todos.query(function(item) {
       return !item.complete;
-    });
-
-    uncompleted.forEach(dojo.hitch(this, function(t) {
+    }).forEach(dojo.hitch(this, function(t) {
       t.finish();
       this.todos.put(t);
     }));
