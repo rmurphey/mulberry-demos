@@ -1,10 +1,11 @@
 dojo.provide('client.routes');
 
-mulberry.route('/completed', function(params, route) {
-  var page = mulberry.createPage({
-    name : 'Completed',
-    pageDef : 'completed'
-  });
+mulberry.page('/todo', {
+  name : 'Todos',
+  pageDef : 'todos'
+}, true);
 
-  mulberry.showPage(page);
+mulberry.page('/completed', {
+  name : 'Completed',
+  pageDef : 'completed'
 });
