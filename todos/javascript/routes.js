@@ -1,10 +1,10 @@
 dojo.provide('client.routes');
 
 mulberry.route('/completed', function(params, route) {
-  var page = toura.app.PageFactory.createPage({
+  var page = mulberry.createPage({
     name : 'Completed',
-    pageController : 'completed'
+    pageDef : 'completed'
   });
 
-  toura.app.UI.showPage(page);
+  mulberry.showPage(page);
 });
