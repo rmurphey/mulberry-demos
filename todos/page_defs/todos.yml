@@ -4,15 +4,11 @@ todos:
   screens:
     - name: index
       regions:
-        - type: row
-          size: fixed
-          components:
+        - components:
           - custom.TodoForm
-        - type: row
+        - className: list
           scrollable: true
           components:
           - custom.TodoList
-        - type: row
-          size: fixed
-          components:
+        - components:
           - custom.TodoTools
