@@ -21,6 +21,7 @@
 @import 'feed-item-detail';
 @import 'feed-item-list';
 @import 'hotspots';
+@import 'image-caption';
 @import 'image-gallery';
 @import 'image-scroller';
 @import 'location-list';
@@ -31,5 +32,15 @@
 @import 'pin-info';
 @import 'search-results';
 @import 'social-message';
+@import 'video-caption';
 @import 'video-player';
 @import 'zoomable-image-gallery';
+
+// custom components
+@import '../../javascript/components/Accelerometer/accelerometer';
+@import '../../javascript/components/Browser/browser';
+@import '../../javascript/components/Camera/camera';
+@import '../../javascript/components/Connection/connection';
+@import '../../javascript/components/Device/device';
+@import '../../javascript/components/Geolocation/geolocation';
+@import '../../javascript/components/Notification/notification';
