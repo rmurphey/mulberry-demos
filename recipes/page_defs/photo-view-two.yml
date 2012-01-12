@@ -6,7 +6,6 @@ photo-view-two:
       - className: page-nav-container
         components:
           - PageNav
-      - type: row
-        scrollable: true
+      - scrollable: true
         components:
           - custom.PhotoViewTwo
