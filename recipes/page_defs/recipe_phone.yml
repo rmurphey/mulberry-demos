@@ -13,8 +13,7 @@ recipe-phone:
         components:
         - PageNav
 
-      - type: row
-        scrollable: true
+      - scrollable: true
         className: main-recipe
         components:
         - custom.ImageHeader
