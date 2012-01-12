@@ -3,23 +3,19 @@ home_grid_tablet:
   screens:
   - name: index
     regions:
-    - type: row
+    - className: top-container
       regions:
-
-      - type: row
-        className: top
+      - className: top home-header-container
         size: fixed
         components:
         - custom.HomeHeader
 
-      - type: row
-        className: home-nav-columns
+      - className: home-nav-columns
         scrollable: true
         components:
           - BodyText
           - ChildNodeGrid
 
-    - type: row
-      size: fixed
+    - className: app-nav-container
       components:
       - AppNav

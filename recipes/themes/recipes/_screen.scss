@@ -1,0 +1,7 @@
+.screen {
+  background-position: center center;
+  -webkit-background-size: cover;
+  
+  // just makes the transition simpler
+  @include flex-row-container;
+}

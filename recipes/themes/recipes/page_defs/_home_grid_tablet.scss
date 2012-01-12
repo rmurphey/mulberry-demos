@@ -1,0 +1,17 @@
+.page.home_grid_tablet {
+  .region.top-container {
+    @include flex-row-container;
+    
+    .region.home-header-container {
+      @include fixed-flex-region;
+    }
+    
+    .region.home-nav-columns {
+      
+    }
+    
+  }
+  .region.app-nav-container {
+    @include fixed-flex-region;
+  }
+}
