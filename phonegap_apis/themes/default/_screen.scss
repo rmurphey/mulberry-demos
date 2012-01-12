@@ -1,0 +1,7 @@
+.screen {
+  background-position: center center;
+  -webkit-background-size: cover;
+  
+  // applying blanket
+  @include flex-row-container;
+}
