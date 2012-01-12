@@ -6,34 +6,28 @@ recipe-tablet:
       backgroundImage: true
       regions:
 
-      - className: page-nav-container
+      - className: page-nav
         components:
         - PageNav
 
-      - type: row
+      - className: content-container
         scrollable: true
         regions:
           
-          - type: row
-            size: fixed
+          - className: image-header-container
             components:
               - custom.ImageHeader
           
-          - type: row
-            className: main-body-text
+          - className: main-body-text
             components:
               - BodyText
           
-          - type: row
-            className: main-recipe
-            contains: columns
+          - className: main-recipe
             regions:
           
-              - type: column
-                className: ingredients-column
+              - className: ingredients-column
                 components:
                   - custom.IngredientsList
           
-              - type: column
-                components:
+              - components:
                   - custom.PreparationList

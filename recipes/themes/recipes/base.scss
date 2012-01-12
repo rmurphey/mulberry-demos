@@ -30,7 +30,7 @@ $headers: Baskerville, serif;
 $headerbg: rgba(0,0,0,.8);
 $navbg: #5f5a50;
 
-.region.page-nav-container {
+.region.page-nav {
   @include fixed-flex-region;
 }
 

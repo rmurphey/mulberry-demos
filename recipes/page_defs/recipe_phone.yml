@@ -9,7 +9,7 @@ recipe-phone:
     - name: index
       backgroundImage: true
       regions:
-      - className: page-nav-container
+      - className: page-nav
         components:
         - PageNav
 
