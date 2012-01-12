@@ -30,6 +30,10 @@ $headers: Baskerville, serif;
 $headerbg: rgba(0,0,0,.8);
 $navbg: #5f5a50;
 
+.region.page-nav-container {
+  @include fixed-flex-region;
+}
+
 @import '../../javascript/components/HomeHeader/home-header';
 @import '../../javascript/components/ImageHeader/image-header';
 @import '../../javascript/components/IngredientsList/ingredients-list';

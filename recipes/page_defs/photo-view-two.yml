@@ -3,8 +3,7 @@ photo-view-two:
   screens:
   - name: index
     regions:
-      - type: row
-        size: fixed
+      - className: page-nav-container
         components:
           - PageNav
       - type: row
