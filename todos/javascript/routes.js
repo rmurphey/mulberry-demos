@@ -1,6 +1,6 @@
 dojo.provide('client.routes');
 
-mulberry.page('/todo', {
+mulberry.page('/todos', {
   name : 'Todos',
   pageDef : 'todos'
 }, true);
