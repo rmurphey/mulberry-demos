@@ -1,6 +1,6 @@
 todos:
   capabilities:
-  - name: TodoPage
+  - name: PageTodos
   screens:
     - name: index
       regions:

@@ -1,6 +1,6 @@
-dojo.provide('client.capabilities.TodoPage');
+dojo.provide('client.capabilities.PageTodos');
 
-mulberry.capability('TodoPage', {
+mulberry.capability('PageTodos', {
   requirements : {
     todoList : 'custom.TodoList',
     todoForm : 'custom.TodoForm',

@@ -1,6 +1,6 @@
-dojo.provide('client.capabilities.CompletedPage');
+dojo.provide('client.capabilities.PageCompleted');
 
-mulberry.capability('CompletedPage', {
+mulberry.capability('PageCompleted', {
   requirements : {
     todoList : 'custom.TodoList'
   },

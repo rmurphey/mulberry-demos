@@ -1,6 +1,6 @@
 completed:
   capabilities:
-  - name: CompletedPage
+  - name: PageCompleted
   screens:
     - name: index
       regions:
