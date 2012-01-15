@@ -1,12 +1,22 @@
 dojo.provide('client.capabilities.PageTodos');
 
 mulberry.capability('PageTodos', {
+  /*
+   * The capability expects the following components to be present in order for
+   * the capability to work.
+   */
   requirements : {
     todoList : 'custom.TodoList',
     todoForm : 'custom.TodoForm',
     todoTools : 'custom.TodoTools'
   },
 
+  /*
+   * These "listeners" will be set up as part of setting up the page. So, for
+   * example, when the TodoForm component instance announces that a user has
+   * added a todo (by calling its `onAdd` method), then the capability's `_add`
+   * method will be run.
+   */
   connects : [
     [ 'todoForm', 'onAdd', '_add' ],
     [ 'todoList', 'onComplete', '_complete' ],
@@ -14,6 +24,10 @@ mulberry.capability('PageTodos', {
     [ 'todoTools', 'onCompleteAll', '_completeAll' ]
   ],
 
+  /*
+   * When the page is set up, we'll grab a reference to the todos store, and
+   * then update the list of todos.
+   */
   init : function() {
     this.todos = client.stores.todos;
     this._updateList();
