@@ -1,4 +1,4 @@
-.page.home_grid_phone {
+.page.home-grid-tablet {
   .region.top-container {
     @include flex-row-container;
     
@@ -6,7 +6,7 @@
       @include fixed-flex-region;
     }
   }
-  
+
   .region.app-nav-container {
     @include fixed-flex-region;
   }

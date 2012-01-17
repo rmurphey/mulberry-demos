@@ -1,4 +1,4 @@
-home_grid_phone:
+home-grid-phone:
   type: node
   screens:
   - name: index
