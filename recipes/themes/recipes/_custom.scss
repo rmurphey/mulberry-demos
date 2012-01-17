@@ -33,7 +33,7 @@
 // background washes
 .page {
   .phone & {
-    &.home_grid_phone {
+    &.home-grid-phone {
       @include tiledbg('resources/images/batthern.png');
     }
 

@@ -3,11 +3,9 @@ photo-view-two:
   screens:
   - name: index
     regions:
-      - type: row
-        size: fixed
+      - className: page-nav
         components:
           - PageNav
-      - type: row
-        scrollable: true
+      - scrollable: true
         components:
           - custom.PhotoViewTwo

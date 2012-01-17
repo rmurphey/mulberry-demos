@@ -1,0 +1,13 @@
+.page.recipe-tablet {
+  .region.content-container {
+    @include flex-row-container;
+    
+    .region.image-header-container {
+      @include fixed-flex-region;
+    }
+    
+    .region.main-recipe {
+      @include flex-column-container;
+    }
+  }
+}

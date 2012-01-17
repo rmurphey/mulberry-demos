@@ -2,13 +2,20 @@
 @import 'helpers/mixins';
 @import 'helpers/forms';
 
+@import 'splash';
+@import 'screen';
+
 body {
   color: $text-color;
-  font-family: Helvetica Neue, sans-serif;
+  font-family: $base-font;
+}
+
+.page {
+  background-color: $app-background-color;
 }
 
 @import 'components/base';
-@import 'templates/base';
+@import 'page_defs/base';
 
 // KLUDGE: workaround for bug in ios where :last-child styles in captions are
 // not applied until after scroller moves, which changes the height and breaks
@@ -22,6 +29,10 @@ body {
 $headers: Baskerville, serif;
 $headerbg: rgba(0,0,0,.8);
 $navbg: #5f5a50;
+
+.region.page-nav {
+  @include fixed-flex-region;
+}
 
 @import '../../javascript/components/HomeHeader/home-header';
 @import '../../javascript/components/ImageHeader/image-header';
