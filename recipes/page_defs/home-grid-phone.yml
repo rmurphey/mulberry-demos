@@ -1,5 +1,4 @@
 home-grid-phone:
-  type: node
   screens:
   - name: index
     regions:

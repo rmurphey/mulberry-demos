@@ -1,5 +1,4 @@
 photo-view:
-  type: node
   screens:
   - name: index
     regions:

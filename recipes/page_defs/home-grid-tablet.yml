@@ -1,5 +1,4 @@
 home-grid-tablet:
-  type: node
   screens:
   - name: index
     regions:
