@@ -1,7 +1,7 @@
 $row: 60px;
 $lipad: 3px;
 
-.component.photo-view-two {
+.component.photo-view {
   li {
     border-top: 1px solid #eee;
     border-bottom: 1px solid #999;
@@ -27,7 +27,6 @@ $lipad: 3px;
     }
   }
 
-
   .image {
     height: $row;
     width: $row;
@@ -35,9 +34,5 @@ $lipad: 3px;
     float: left;
     margin: -$lipad;
     margin-right: 10px;
-  }
-
-  span {
-
   }
 }

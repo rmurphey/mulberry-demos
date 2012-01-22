@@ -1,33 +1,24 @@
 recipe-tablet:
-  type: node
-
   screens:
     - name: index
       backgroundImage: true
       regions:
-
       - className: page-nav
         components:
         - PageNav
-
       - className: content-container
         scrollable: true
         regions:
-          
           - className: image-header-container
             components:
               - custom.ImageHeader
-          
           - className: main-body-text
             components:
               - BodyText
-          
           - className: main-recipe
             regions:
-          
               - className: ingredients-column
                 components:
                   - custom.IngredientsList
-          
               - components:
                   - custom.PreparationList
