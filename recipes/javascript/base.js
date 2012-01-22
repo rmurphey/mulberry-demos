@@ -6,3 +6,5 @@ dojo.require('client.components.HomeHeader');
 dojo.require('client.components.PhotoView');
 dojo.require('client.components.PhotoViewTwo');
 dojo.require('client.capabilities.RecipePage');
+
+toura.features.siblingNav = false;
