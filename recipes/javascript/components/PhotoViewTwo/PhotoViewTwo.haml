@@ -1,6 +1,0 @@
-.component.photo-view-two
-  :each c in children
-    %li
-      %a{ href : c.url }
-        .image{ dojoType: 'toura.ui.BackgroundImage', imageUrl: c.featuredImage.small.url, loadOnInit: true }
-        %span =c.name

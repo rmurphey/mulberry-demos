@@ -1,5 +1,4 @@
 home-grid-phone:
-  type: node
   screens:
   - name: index
     regions:
@@ -14,7 +13,7 @@ home-grid-phone:
         scrollable: true
         components:
           - BodyText
-          - custom.PhotoViewTwo
+          - custom.PhotoView
 
     - className: app-nav-container
       components:

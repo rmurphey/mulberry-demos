@@ -34,10 +34,9 @@ $navbg: #5f5a50;
   @include fixed-flex-region;
 }
 
+@import 'custom';
 @import '../../javascript/components/HomeHeader/home-header';
 @import '../../javascript/components/ImageHeader/image-header';
 @import '../../javascript/components/IngredientsList/ingredients-list';
 @import '../../javascript/components/PreparationList/preparation-list';
-@import 'custom';
 @import '../../javascript/components/PhotoView/photo-view';
-@import '../../javascript/components/PhotoViewTwo/photo-view-two';
