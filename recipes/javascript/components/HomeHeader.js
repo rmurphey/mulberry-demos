@@ -2,10 +2,7 @@ dojo.require('toura.components.HeaderImage');
 dojo.provide('client.components.HomeHeader');
 
 dojo.declare('client.components.HomeHeader', [ toura.components.HeaderImage ], {
-  templateString: dojo.cache(
-    'client.components',
-    'HomeHeader/HomeHeader.haml'
-  ),
+  templateString: dojo.cache('client.components', 'HomeHeader/HomeHeader.haml'),
 
   resizeElements : function() {
     this.inherited(arguments);
