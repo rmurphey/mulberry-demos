@@ -1,0 +1,53 @@
+@import 'settings';
+@import 'helpers/mixins';
+@import 'helpers/forms';
+
+@import 'splash';
+@import 'screen';
+
+body {
+  color: $text-color;
+  font-family: $base-font;
+}
+
+.page {
+  background-color: $app-background-color;
+}
+
+// KLUDGE: workaround for bug in ios where :last-child styles in captions are
+// not applied until after scroller moves, which changes the height and breaks
+// the scroller.
+.component.body-text:not(.image-caption) {
+  p:last-child {
+    margin-bottom: 0;
+  }
+}
+
+@import '../../javascript/components/TodoForm/todo-form';
+@import '../../javascript/components/TodoList/todo-list';
+@import '../../javascript/components/TodoTools/todo-tools';
+
+.page.todos {
+  .screen.index {
+    @include flex-row-container;
+
+    .region.todo-list-container {
+      @include flex-region;
+    }
+
+    .region.todo-form-container,
+    .region.todo-tools-container {
+      @include fixed-flex-region;
+    }
+  }
+}
+
+.page.completed {
+  .screen.index {
+    @include flex-row-container;
+
+    .region.page-nav-container {
+      @include fixed-flex-region;
+    }
+  }
+}
