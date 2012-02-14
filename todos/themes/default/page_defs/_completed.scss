@@ -1,9 +1,0 @@
-.page.completed {
-  .screen.index {
-    @include flex-row-container;
-    
-    .region.page-nav-container {
-      @include fixed-flex-region;
-    }
-  }
-}
