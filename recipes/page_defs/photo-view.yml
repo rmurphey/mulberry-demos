@@ -1,5 +1,4 @@
-photo-view-two:
-  type: node
+photo-view:
   screens:
   - name: index
     regions:
@@ -8,4 +7,4 @@ photo-view-two:
           - PageNav
       - scrollable: true
         components:
-          - custom.PhotoViewTwo
+          - custom.PhotoView

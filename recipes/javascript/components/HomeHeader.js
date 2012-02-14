@@ -1,24 +1,11 @@
 dojo.require('toura.components.HeaderImage');
 dojo.provide('client.components.HomeHeader');
 
-// we are doing this as a "core" component to allow inheritance
 dojo.declare('client.components.HomeHeader', [ toura.components.HeaderImage ], {
   templateString: dojo.cache('client.components', 'HomeHeader/HomeHeader.haml'),
-  "class": 'home-header',
 
-  prepareData: function() {
+  resizeElements : function() {
     this.inherited(arguments);
-
-    this.title = this.node ? this.node.name : this.title;
-
-    if (this.viewImage) {
-      dojo.mixin(this.viewImage, this._calculateDimensions());
-    }
-  },
-
-  postCreate: function() {
-    this.inherited(arguments);
-
     this._offsetImage();
   },
 

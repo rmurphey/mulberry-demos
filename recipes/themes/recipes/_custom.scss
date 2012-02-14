@@ -37,7 +37,7 @@
       @include tiledbg('resources/images/batthern.png');
     }
 
-    &.photo-view-two {
+    &.photo-view {
       @include tiledbg('resources/images/batthern.png');
     }
 
@@ -182,7 +182,7 @@ ol.component.preparation-list {
 
 }
 
-.component.photo-view-two {
+.component.photo-view {
   .phone & {
     margin-top: 5px;
     li {
@@ -238,19 +238,6 @@ ol.component.preparation-list {
         line-height: 21px;
       }
     }
-  }
-}
-
-.component.photo-view {
-  .image {
-    height: 250px;
-  }
-  h3 {
-    @include blackoverlay;
-    font-size: 18px;
-    bottom: 12px;
-    max-width: 85%;
-    padding: 5px 10px;
   }
 }
 

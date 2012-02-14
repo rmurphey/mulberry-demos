@@ -1,5 +1,4 @@
 recipe-phone:
-  type: node
   capabilities:
   - name: RecipePage
     components:

@@ -6,15 +6,6 @@ mulberry.component('PhotoView', {
 
   prep : function() {
     this.title = this.node ? this.node.title : this.title;
-
-    // get the children
     this.node.populateChildren();
-    this.children = dojo.filter(this.node.children || [], function(child) {
-      return child.featuredImage !== undefined;
-    });
-  },
-
-  init : function() {
-    // TODO: snappy action!
   }
 });
