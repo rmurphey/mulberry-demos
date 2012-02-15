@@ -10,7 +10,7 @@
     -webkit-box-flex: 1;
 
     a {
-      box-sizing: border-box;
+      box-sizing: -webkit-border-box;
       -webkit-background-size: contain;
       background: url(resources/icons/light/btn-page-nav-back.png) no-repeat;
       background-position-y: center;
