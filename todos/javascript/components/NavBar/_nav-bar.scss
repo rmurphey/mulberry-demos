@@ -1,0 +1,35 @@
+.component.nav-bar {
+  @include chrome-gradient;
+
+  background-color: $chrome-color;
+  height: 60px;
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+
+  div {
+    -webkit-box-flex: 1;
+
+    a {
+      box-sizing: border-box;
+      -webkit-background-size: contain;
+      background: url(resources/icons/light/btn-page-nav-back.png) no-repeat;
+      background-position-y: center;
+
+      display: block;
+      height: 40px;
+      width: 40px;
+      margin: 10px;
+    }
+
+    a:active {
+      background-image: url(resources/icons/dark/btn-page-nav-back.png);
+    }
+  }
+
+  h1 {
+    -webkit-box-flex: 8;
+    color: $chrome-text-color;
+    text-align: center;
+    margin: 20px 0 0 -60px;
+  }
+}

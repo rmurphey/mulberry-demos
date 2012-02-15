@@ -20,3 +20,4 @@ dojo.require('client.components.TodoList');
 dojo.require('client.components.TodoTools');
 dojo.require('client.stores.todos');
 dojo.require('client.models.Todo');
+dojo.require('client.components.NavBar');

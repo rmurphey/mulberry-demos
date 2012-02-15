@@ -26,6 +26,7 @@ body {
 @import '../../javascript/components/TodoForm/todo-form';
 @import '../../javascript/components/TodoList/todo-list';
 @import '../../javascript/components/TodoTools/todo-tools';
+@import '../../javascript/components/NavBar/nav-bar';
 
 .page.todos {
   .screen.index {
@@ -46,7 +47,7 @@ body {
   .screen.index {
     @include flex-row-container;
 
-    .region.page-nav-container {
+    .region.nav-bar-container {
       @include fixed-flex-region;
     }
   }

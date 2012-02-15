@@ -1,4 +1,6 @@
 .component.todo-form {
+  @include chrome-gradient;
+
   padding: 10px;
-  background-color: #666;
+  background-color: $chrome-color;
 }

@@ -1,10 +1,11 @@
 .component.todo-manager {
-  color: white;
-  background-color: black;
+  @include chrome-gradient;
+  color: $chrome-text-color;
+  background-color: $chrome-color;
   padding: 10px;
 
   a {
     padding-left: 20px;
-    color: #999;
+    color: $hint-text-color;
   }
 }

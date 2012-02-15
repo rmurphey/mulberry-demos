@@ -1,15 +1,14 @@
 .component.todo-list {
-
   li {
     padding: 10px;
 
     &:nth-child(even) {
-      background-color: #eaeaea;
+      background-color: $alternate-row-color;
     }
 
     &.no-items {
       font-style: italic;
-      color: #ccc;
+      color: $hint-text-color;
     }
 
     input {
@@ -19,7 +18,7 @@
     .delete {
       margin: 5px 0 0 0;
       font-size: 12px;
-      color: #ccc;
+      color: $hint-text-color;
     }
   }
 }

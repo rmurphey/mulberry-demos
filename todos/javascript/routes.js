@@ -10,24 +10,6 @@ mulberry.page('/completed', {
   pageDef : 'completed'
 });
 
-mulberry.pageDef('completed', {
-  capabilities : [ 'PageCompleted' ],
-  screens : [
-    {
-      name : 'index',
-      regions : [
-        {
-          className : 'todo-list-container',
-          scrollable : true,
-          components : [
-            'TodoList'
-          ]
-        }
-      ]
-    }
-  ]
-});
-
 mulberry.pageDef('todos', {
   capabilities : [ 'PageTodos' ],
   screens : [
@@ -51,3 +33,26 @@ mulberry.pageDef('todos', {
     }
   ]
 });
+
+mulberry.pageDef('completed', {
+  capabilities : [ 'PageCompleted' ],
+  screens : [
+    {
+      name : 'index',
+      regions : [
+        {
+          className : 'nav-bar-container',
+          components : [ 'NavBar' ]
+        },
+        {
+          className : 'todo-list-container',
+          scrollable : true,
+          components : [
+            'TodoList'
+          ]
+        }
+      ]
+    }
+  ]
+});
+
